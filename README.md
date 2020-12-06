@@ -1,2 +1,2 @@
-# coding_practice
+# coding-practice
 Coding Practice in Python
