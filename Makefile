@@ -1,6 +1,3 @@
-setup:
-	python -m pip install -r requirements.txt
-
 format:
 	black .
 	isort .
@@ -8,5 +5,12 @@ format:
 lint:
 	env PYTHONPATH=src pytest src --flake8 --mypy
 
+setup:
+	python -m pip install -r requirements.txt
+	pre-commit install
+
 test-solutions:
-	env PYTHONPATH=src python run_all.py
+	env PYTHONPATH=src pytest src -s --verbose --cov=src --cov-report=html --cov-report=term-missing
+
+tree:
+	tree -I "$(shell cat .gitignore | tr -s '\n' '|')"

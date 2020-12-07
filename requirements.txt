@@ -13,5 +13,6 @@ pre-commit<=2.9.2
 pycodestyle<=2.6.0
 pyflakes<=2.2.0
 pytest<=6.1.2
+pytest-cov<=2.10.1
 pytest-flake8<=1.0.6
 pytest-mypy<=0.8.0

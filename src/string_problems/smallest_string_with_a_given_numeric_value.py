@@ -51,3 +51,9 @@ class Solution:
             curr_char += 1
         # here we add the remaining letter z's
         return ret + "z" * n
+
+
+if __name__ == "__main__":
+    solution = Solution()
+    assert solution.get_smallest_string(3, 27) == "aay"
+    assert solution.get_smallest_string(5, 73) == "aaszz"
