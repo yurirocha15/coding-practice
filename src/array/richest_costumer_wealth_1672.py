@@ -12,8 +12,6 @@ Return the wealth that the richest customer has.
 A customer's wealth is the amount of money they have in all their bank accounts.
 The richest customer is the customer that has the maximum wealth.
 
-Examples:
-
 Example 1:
 Input: accounts = [[1,2,3],[3,2,1]]
 Output: 6
