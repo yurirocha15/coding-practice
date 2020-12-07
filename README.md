@@ -13,3 +13,4 @@ Coding Practice in Python
 |7   |[Check If Two String Arrays are Equivalent](src/string_problems/check_if_two_string_arrays_are_equivalent.py)|[string](src/string_problems)|Easy|[LeetCode](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/)
 |8   |[Smallest String With A Given Numeric Value](src/string_problems/smallest_string_with_a_given_numeric_value.py)|[string](src/string_problems)|Medium|[LeetCode](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/)
 |9   |[Richest Customer Wealth](src/array_problems/richest_costumer_wealth.py)|[array](src/array_problems)|Easy|[LeetCode](https://leetcode.com/problems/richest-customer-wealth/)
+|10  |[Find the Most Competitive Subsequence](src/stack_problems/richest_costumer_wealth.py)|[stack](src/stack_problems)|Easy|[LeetCode](https://leetcode.com/problems/find-the-most-competitive-subsequence/)
