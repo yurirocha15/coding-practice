@@ -48,10 +48,6 @@ from typing import List
 
 
 class Solution:
-    """
-    Solution Class
-    """
-
     def maximum_wealth(self, accounts: List[List[int]]) -> int:
         return max([sum(money) for money in accounts])
 
