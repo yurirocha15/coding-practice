@@ -93,3 +93,31 @@ class TestClass1672:
             init_variables_1672().maximum_wealth([[2, 8, 7], [7, 1, 3], [1, 9, 5]])
             == 17
         )
+
+
+"""
+Test 1674: minimum_moves_to_make_array_complementary
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1674():
+    from src.array_problems.minimum_moves_to_make_array_complementary import Solution
+
+    solution = Solution()
+
+    def _init_variables_1674():
+        return solution
+
+    yield _init_variables_1674
+
+
+class TestClass1674:
+    def test_solution_0(self, init_variables_1674):
+        assert init_variables_1674().min_moves([1, 2, 4, 3], 4) == 1
+
+    def test_solution_1(self, init_variables_1674):
+        assert init_variables_1674().min_moves([1, 2, 2, 1], 2) == 2
+
+    def test_solution_2(self, init_variables_1674):
+        assert init_variables_1674().min_moves([1, 2, 1, 2], 2) == 0
