@@ -30,6 +30,44 @@ Constraints:
 1 <= n <= 10^5
 n <= k <= 26 * n
 
+###########################################################################################
+Explanation:
+[c|c|c|c|r|r|r|r|r|r|r|r]
+|<----->|<------------->|
+   cnt       n - cnt
+
+We want cnt to be as big as possible for the smallest c (lexicographically)
+
+We start with c = 1 (a)
+The maximum value r can assume is 26, so we can create the inequality
+
+ k - (cnt * c) <= (n - cnt) * 26, with c ~(1, 26)
+(26 - c) * cnt + k - (26 * n) <= 0
+cnt <= (26 * n - k)/(26 - c)
+cnt = floor((26 * n - k)/(26 - c))
+
+Ex.: n = 3, k = 27
+Start with c = 1
+cnt = floor((26 * 3 - 27)/(26 - 1)) = 2
+=> ret += 'a' * 2 => ret = "aa"
+=> k = 25
+=> n = 1
+=> c = 2 (b)
+
+cnt = floor((26 * 1 - 25)/(24)) = 0
+...
+loop until c = 25 (y)
+...
+cnt = floor((26 * 1 - 25)/(1)) = 1
+=> ret += 'y' * 1 => ret = "aay"
+=> k = 0
+=> n = 0
+=> c = 26 (z)
+
+end of loop
+
+return "aay" + "z" * 0
+
 Complexity:
 Time: O(1)
 Space: O(N)
