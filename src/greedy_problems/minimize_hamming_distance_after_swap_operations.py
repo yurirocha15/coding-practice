@@ -48,16 +48,19 @@ from collections import Counter, defaultdict
 from typing import DefaultDict, Dict, List
 
 
+# Union Find Algorithm
 class UnionFind:
     def __init__(self, n: int):
         self.idx_parent = [i for i in range(n)]
 
+    # Finds the group of which a node is inside
     def find(self, idx: int):
         if self.idx_parent[idx] != idx:
             # path compression
             self.idx_parent[idx] = self.find(self.idx_parent[idx])
         return self.idx_parent[idx]
 
+    # Merge the group of two nodes
     def union(self, a: int, b: int):
         group_a = self.find(a)
         group_b = self.find(b)
@@ -72,6 +75,7 @@ class Solution:
     ) -> int:
         uf = UnionFind(len(source))
 
+        # Group indexes that can have there values swapped
         for swap in allowedSwaps:
             uf.union(swap[0], swap[1])
 
@@ -79,6 +83,7 @@ class Solution:
             lambda: {"s": [], "t": []}
         )
 
+        # Add each source and target number to their respective group
         for i, val in enumerate(zip(source, target)):
             s: int = val[0]
             t: int = val[1]
@@ -86,6 +91,8 @@ class Solution:
             groups[parent]["s"].append(s)
             groups[parent]["t"].append(t)
 
+        # calculate the difference between the each source group
+        # and its respective target group
         ret = 0
         for group in groups.values():
             ret += sum((Counter(group["s"]) - Counter(group["t"])).values())

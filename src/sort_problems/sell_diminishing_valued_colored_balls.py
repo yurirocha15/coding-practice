@@ -5,13 +5,22 @@ Problem: 1648. Sell Diminishing-Valued Colored Balls
 URL: https://leetcode.com/problems/sell-diminishing-valued-colored-balls/
 
 Description:
-You have an inventory of different colored balls, and there is a customer that wants orders balls of any color.
+You have an inventory of different colored balls,
+and there is a customer that wants orders balls of any color.
 
-The customer weirdly values the colored balls. Each colored ball's value is the number of balls of that color you currently have in your inventory. For example, if you own 6 yellow balls, the customer would pay 6 for the first yellow ball. After the transaction, there are only 5 yellow balls left, so the next yellow ball is then valued at 5 (i.e., the value of the balls decreases as you sell more to the customer).
+The customer weirdly values the colored balls.
+Each colored ball's value is the number of balls of that color you currently have in your inventory.
+For example, if you own 6 yellow balls, the customer would pay 6 for the first yellow ball.
+After the transaction, there are only 5 yellow balls left, so the next yellow ball is then valued at 5
+(i.e., the value of the balls decreases as you sell more to the customer).
 
-You are given an integer array, inventory, where inventory[i] represents the number of balls of the ith color that you initially own. You are also given an integer orders, which represents the total number of balls that the customer wants. You can sell the balls in any order.
+You are given an integer array, inventory, where inventory[i] represents the number of balls
+of the ith color that you initially own. You are also given an integer orders,
+which represents the total number of balls that the customer wants.
+You can sell the balls in any order.
 
-Return the maximum total value that you can attain after selling orders colored balls. As the answer may be too large, return it modulo 10^9 + 7.
+Return the maximum total value that you can attain after selling orders colored balls.
+As the answer may be too large, return it modulo 10^9 + 7.
 
 
 Example 1:
@@ -33,7 +42,8 @@ Output: 110
 Example 4:
 Input: inventory = [1000000000], orders = 1000000000
 Output: 21
-Explanation: Sell the 1st color 1000000000 times for a total value of 500000000500000000. 500000000500000000 modulo 10^9 + 7 = 21.
+Explanation: Sell the 1st color 1000000000 times for a total value of 500000000500000000.
+500000000500000000 modulo 10^9 + 7 = 21.
 
 Constraints:
 
@@ -52,7 +62,8 @@ class Solution:
     def calc_partial_sum(self, n, cnt):
         return (
             (n + n - cnt + 1) * cnt
-        ) >> 1  # the division / outputs a float which have limited precision. >> ensures that the output is an int
+        ) >> 1  # the division / outputs a float which have limited precision.
+        # >> (bit shift) ensures that the output is an int
 
     def max_profit(self, inventory: List[int], orders: int) -> int:
         # order in descending order

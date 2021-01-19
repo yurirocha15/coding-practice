@@ -5,7 +5,9 @@ Problem: 1658. Minimum Operations to Reduce X to Zero
 URL: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/
 
 Description:
-You are given an integer array nums and an integer x. In one operation, you can either remove the leftmost or the rightmost element from the array nums and subtract its value from x. Note that this modifies the array for future operations.
+You are given an integer array nums and an integer x. In one operation, you can either remove the leftmost
+or the rightmost element from the array nums and subtract its value from x.
+Note that this modifies the array for future operations.
 
 Return the minimum number of operations to reduce x to exactly 0 if it's possible, otherwise, return -1.
 
@@ -22,7 +24,8 @@ Output: -1
 Example 3:
 Input: nums = [3,2,20,1,1,3], x = 10
 Output: 5
-Explanation: The optimal solution is to remove the last three elements and the first two elements (5 operations in total) to reduce x to zero.
+Explanation: The optimal solution is to remove the last three elements
+and the first two elements (5 operations in total) to reduce x to zero.
 
 Constraints:
 
@@ -60,7 +63,8 @@ class Solution:
         # if the total sum is equal x, ops is the array length
         if tmp_sum == x:
             return ops
-        # loop through the vector backwards, calculating the intermediate sum and looking for the complement in the forward sum dict
+        # loop through the vector backwards, calculating the intermediate sum
+        # and looking for the complement in the forward sum dict
         ret, cnt = -1, 0
         for n in reversed(nums):
             if x < 0:

@@ -5,7 +5,8 @@ Problem: 1659. Maximize Grid Happiness
 URL: https://leetcode.com/problems/maximize-grid-happiness/
 
 Description:
-You are given four integers, m, n, introvertsCount, and extrovertsCount. You have an m x n grid, and there are two types of people: introverts and extroverts.
+You are given four integers, m, n, introvertsCount, and extrovertsCount.
+You have an m x n grid, and there are two types of people: introverts and extroverts.
 There are introvertsCount introverts and extrovertsCount extroverts.
 
 You should decide how many people you want to live in the grid and assign each of them one grid cell.
@@ -28,7 +29,8 @@ We can put the introvert in cell (1,1) and put the extroverts in cells (1,3) and
 - Extrovert at (1,3) happiness: 40 (starting happiness) + (1 * 20) (1 neighbor) = 60
 - Extrovert at (2,3) happiness: 40 (starting happiness) + (1 * 20) (1 neighbor) = 60
 The grid happiness is 120 + 60 + 60 = 240.
-The above figure shows the grid in this example with each person's happiness. The introvert stays in the light green cell while the extroverts live on the light purple cells.
+The above figure shows the grid in this example with each person's happiness.
+The introvert stays in the light green cell while the extroverts live on the light purple cells.
 
 Example 2:
 Input: m = 3, n = 1, introvertsCount = 2, extrovertsCount = 1
