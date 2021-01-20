@@ -70,7 +70,7 @@ class UnionFind:
 
 
 class Solution:
-    def minimumHammingDistance(
+    def minimum_hamming_distance(
         self, source: List[int], target: List[int], allowedSwaps: List[List[int]]
     ) -> int:
         uf = UnionFind(len(source))
@@ -102,19 +102,19 @@ class Solution:
 if __name__ == "__main__":
     solution = Solution()
     assert (
-        solution.minimumHammingDistance(
+        solution.minimum_hamming_distance(
             source=[1, 2, 3, 4], target=[2, 1, 4, 5], allowedSwaps=[[0, 1], [2, 3]]
         )
         == 1
     )
     assert (
-        solution.minimumHammingDistance(
+        solution.minimum_hamming_distance(
             source=[1, 2, 3, 4], target=[1, 3, 2, 4], allowedSwaps=[]
         )
         == 2
     )
     assert (
-        solution.minimumHammingDistance(
+        solution.minimum_hamming_distance(
             source=[5, 1, 2, 4, 3],
             target=[1, 5, 4, 2, 3],
             allowedSwaps=[[0, 4], [4, 2], [1, 3], [1, 4]],

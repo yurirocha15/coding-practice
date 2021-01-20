@@ -75,7 +75,7 @@ def init_variables_1722():
 class TestClass1722:
     def test_solution_0(self, init_variables_1722):
         assert (
-            init_variables_1722().minimumHammingDistance(
+            init_variables_1722().minimum_hamming_distance(
                 source=[1, 2, 3, 4], target=[2, 1, 4, 5], allowedSwaps=[[0, 1], [2, 3]]
             )
             == 1
@@ -83,7 +83,7 @@ class TestClass1722:
 
     def test_solution_1(self, init_variables_1722):
         assert (
-            init_variables_1722().minimumHammingDistance(
+            init_variables_1722().minimum_hamming_distance(
                 source=[1, 2, 3, 4], target=[1, 3, 2, 4], allowedSwaps=[]
             )
             == 2
@@ -91,10 +91,37 @@ class TestClass1722:
 
     def test_solution_2(self, init_variables_1722):
         assert (
-            init_variables_1722().minimumHammingDistance(
+            init_variables_1722().minimum_hamming_distance(
                 source=[5, 1, 2, 4, 3],
                 target=[1, 5, 4, 2, 3],
                 allowedSwaps=[[0, 4], [4, 2], [1, 3], [1, 4]],
             )
             == 0
+        )
+
+
+"""
+Test 1723. Find Minimum Time to Finish All Jobs
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1723():
+    from src.greedy_problems.find_minimum_time_to_finish_all_jobs import Solution
+
+    solution = Solution()
+
+    def _init_variables_1723():
+        return solution
+
+    yield _init_variables_1723
+
+
+class TestClass1723:
+    def test_solution_0(self, init_variables_1723):
+        assert init_variables_1723().minimum_time_required(jobs=[3, 2, 3], k=3) == 3
+
+    def test_solution_1(self, init_variables_1723):
+        assert (
+            init_variables_1723().minimum_time_required(jobs=[1, 2, 4, 7, 8], k=2) == 11
         )
