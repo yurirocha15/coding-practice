@@ -83,3 +83,47 @@ class TestClass1690:
         assert (
             init_variables_1690().stone_game_VII([7, 90, 5, 1, 100, 10, 10, 2]) == 122
         )
+
+
+"""
+Test 1728. Cat and Mouse II
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1728():
+    from src.dp_problems.cat_and_mouse_ii import Solution
+
+    solution = Solution()
+
+    def _init_variables_1728():
+        return solution
+
+    yield _init_variables_1728
+
+
+class TestClass1728:
+    def test_solution_0(self, init_variables_1728):
+        assert init_variables_1728().can_mouse_win(
+            grid=["####F", "#C...", "M...."], catJump=1, mouseJump=2
+        )
+
+    def test_solution_1(self, init_variables_1728):
+        assert init_variables_1728().can_mouse_win(
+            grid=["M.C...F"], catJump=1, mouseJump=4
+        )
+
+    def test_solution_2(self, init_variables_1728):
+        assert not init_variables_1728().can_mouse_win(
+            grid=["M.C...F"], catJump=1, mouseJump=3
+        )
+
+    def test_solution_3(self, init_variables_1728):
+        assert not init_variables_1728().can_mouse_win(
+            grid=["C...#", "...#F", "....#", "M...."], catJump=2, mouseJump=5
+        )
+
+    def test_solution_4(self, init_variables_1728):
+        assert init_variables_1728().can_mouse_win(
+            grid=[".M...", "..#..", "#..#.", "C#.#.", "...#F"], catJump=3, mouseJump=1
+        )
