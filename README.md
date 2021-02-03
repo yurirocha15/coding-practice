@@ -27,3 +27,5 @@ Coding Practice in Python
 |21  |[Minimize Hamming Distance After Swap Operations](src/greedy_problems/minimize_hamming_distance_after_swap_operations.py)|[greedy](src/greedy_problems)|Medium|[LeetCode](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/)
 |22  |[Find Minimum Time to Finish All Jobs](src/greedy_problems/find_minimum_time_to_finish_all_jobs.py)|[greedy](src/greedy_problems)|Hard|[LeetCode](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/)
 |23  |[Cat and Mouse II](src/dp_problems/cat_and_mouse_ii.py)|[dp](src/dp_problems)|Hard|[LeetCode](https://leetcode.com/problems/cat-and-mouse-ii/)
+|24  |[Latest Time by Replacing Hidden Digits](src/string_problems/latest_time_by_replacing_hidden_digits.py)|[string](src/string_problems)|Easy|[LeetCode](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/)
+|25  |[Change Minimum Characters to Satisfy One of Three Conditions](src/string_problems/change_minimum_characters_to_satisfy_one_of_three_conditions.py)|[string](src/string_problems)|Medium|[LeetCode](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/)

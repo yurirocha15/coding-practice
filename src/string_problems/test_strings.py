@@ -125,3 +125,58 @@ class TestClass1694:
             init_variables_1694().reformat_number("--17-5 229 35-39475 ")
             == "175-229-353-94-75"
         )
+
+
+"""
+Test 1736. Latest Time by Replacing Hidden Digits
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1736():
+    from src.string_problems.latest_time_by_replacing_hidden_digits import Solution
+
+    solution = Solution()
+
+    def _init_variables_1736():
+        return solution
+
+    yield _init_variables_1736
+
+
+class TestClass1736:
+    def test_solution_0(self, init_variables_1736):
+        assert init_variables_1736().maximum_time("2?:?0") == "23:50"
+
+    def test_solution_1(self, init_variables_1736):
+        assert init_variables_1736().maximum_time("0?:3?") == "09:39"
+
+    def test_solution_2(self, init_variables_1736):
+        assert init_variables_1736().maximum_time("1?:22") == "19:22"
+
+
+"""
+Test 1737. Change Minimum Characters to Satisfy One of Three Conditions
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1737():
+    from src.string_problems.change_minimum_characters_to_satisfy_one_of_three_conditions import (
+        Solution,
+    )
+
+    solution = Solution()
+
+    def _init_variables_1737():
+        return solution
+
+    yield _init_variables_1737
+
+
+class TestClass1737:
+    def test_solution_0(self, init_variables_1737):
+        assert init_variables_1737().min_characters(a="aba", b="caa") == 2
+
+    def test_solution_1(self, init_variables_1737):
+        assert init_variables_1737().min_characters(a="dabadd", b="cda") == 3
