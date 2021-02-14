@@ -44,9 +44,7 @@ class Solution:
     def min_characters(self, a: str, b: str) -> int:
         ca = Counter(a)  # O(A)
         cb = Counter(b)  # O(B)
-        sum_a = sum(ca.values())  # O(1)
-        sum_b = sum(cb.values())  # O(1)
-        ret = 10 ** 10000
+        ret = len(a) + len(b) - max((ca + cb).values())  # case 3
         # loop through every letter in the alphabet
         for c in "bcdefghijklmnopqrstuvwxyz":  # O(1)
             # c will be the pivot
@@ -60,14 +58,14 @@ class Solution:
                 else:
                     cnt_1 += cnt_ca
             # when looping b, swap the conditions
-            for char_cb, value_cb in cb.items():  # O(1)
+            for char_cb, cnt_cb in cb.items():  # O(1)
                 if char_cb < c:
-                    cnt_1 += value_cb
+                    cnt_1 += cnt_cb
                 else:
-                    cnt_2 += value_cb
+                    cnt_2 += cnt_cb
             # check which of the three cases has the smallest cost
-            ret = min([ret, cnt_1, cnt_2, (sum_a - ca[c]) + (sum_b - cb[c])])
-        return min(ret, (sum_a - ca["a"]) + (sum_b - cb["a"]))
+            ret = min([ret, cnt_1, cnt_2])
+        return ret
 
 
 if __name__ == "__main__":

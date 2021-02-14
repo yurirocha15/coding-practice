@@ -149,3 +149,55 @@ class TestClass1695:
             init_variables_1695().maximum_unique_subarray([5, 2, 1, 2, 5, 2, 1, 2, 5])
             == 8
         )
+
+
+"""
+Test 1744. Can You Eat Your Favorite Candy on Your Favorite Day?
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1744():
+    from src.array_problems.can_you_eat_your_favorite_candy_on_your_favorite_day import Solution
+
+    solution = Solution()
+
+    def _init_variables_1744():
+        return solution
+
+    yield _init_variables_1744
+
+
+class TestClass1744:
+    def test_solution_0(self, init_variables_1744):
+        assert init_variables_1744().can_eat(
+            [7, 4, 5, 3, 8], [[0, 2, 2], [4, 2, 4], [2, 13, 1000000000]]
+        ) == [True, False, True]
+
+
+"""
+Test 1742. Maximum Number of Balls in a Box
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1742():
+    from src.array_problems.maximum_number_of_balls_in_a_box import Solution
+
+    solution = Solution()
+
+    def _init_variables_1742():
+        return solution
+
+    yield _init_variables_1742
+
+
+class TestClass1742:
+    def test_solution_0(self, init_variables_1742):
+        assert init_variables_1742().count_balls(lowLimit=1, highLimit=10) == 2
+
+    def test_solution_1(self, init_variables_1742):
+        assert init_variables_1742().count_balls(lowLimit=5, highLimit=15) == 2
+
+    def test_solution_2(self, init_variables_1742):
+        assert init_variables_1742().count_balls(lowLimit=19, highLimit=28) == 2
