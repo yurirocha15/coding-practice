@@ -127,3 +127,28 @@ class TestClass1728:
         assert init_variables_1728().can_mouse_win(
             grid=[".M...", "..#..", "#..#.", "C#.#.", "...#F"], catJump=3, mouseJump=1
         )
+
+
+"""
+Test 1745. Palindrome Partitioning IV
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1745():
+    from src.dp_problems.palindrome_partitioning_iv import Solution
+
+    solution = Solution()
+
+    def _init_variables_1745():
+        return solution
+
+    yield _init_variables_1745
+
+
+class TestClass1745:
+    def test_solution_0(self, init_variables_1745):
+        assert init_variables_1745().check_partitioning(s="abcbdd") is True
+
+    def test_solution_1(self, init_variables_1745):
+        assert init_variables_1745().check_partitioning(s="bcbddxy") is False

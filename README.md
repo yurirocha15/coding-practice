@@ -34,3 +34,4 @@ Coding Practice in Python
 |28 |[Maximum Number of Balls in a Box](src/array_problems/maximum_number_of_balls_in_a_box.py)|[array](src/array_problems)|Easy|[LeetCode](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/)|
 |29 |[Restore the Array From Adjacent Pairs](src/greedy_problems/restore_the_array_from_adjacent_pairs.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/description/)|
 |30 |[Can You Eat Your Favorite Candy on Your Favorite Day?](src/array_problems/can_you_eat_your_favorite_candy_on_your_favorite_day.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day/description/)|
+|31 |[Palindrome Partitioning IV](src/dp_problems/palindrome_partitioning_iv.py)|[dp](src/dp_problems)|Hard|[Leetcode](https://leetcode.com/problems/palindrome-partitioning-iv/description/)|
