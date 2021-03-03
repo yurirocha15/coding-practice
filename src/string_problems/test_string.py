@@ -180,3 +180,31 @@ class TestClass1737:
 
     def test_solution_1(self, init_variables_1737):
         assert init_variables_1737().min_characters(a="dabadd", b="cda") == 3
+
+
+"""
+Test 1759. Count Number of Homogenous Substrings
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1759():
+    from src.string_problems.count_number_of_homogenous_substrings import Solution
+
+    solution = Solution()
+
+    def _init_variables_1759():
+        return solution
+
+    yield _init_variables_1759
+
+
+class TestClass1759:
+    def test_solution_0(self, init_variables_1759):
+        assert init_variables_1759().count_homogenous(s="abbcccaa") == 13
+
+    def test_solution_1(self, init_variables_1759):
+        assert init_variables_1759().count_homogenous(s="xy") == 2
+
+    def test_solution_2(self, init_variables_1759):
+        assert init_variables_1759().count_homogenous(s="zzzzz") == 15

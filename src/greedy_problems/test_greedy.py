@@ -187,3 +187,31 @@ class TestClass1743:
         assert init_variables_1743().restore_array(
             adjacentPairs=[[100000, -100000]]
         ) == [100000, -100000]
+
+
+"""
+Test 1758. Minimum Changes To Make Alternating Binary String
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1758():
+    from src.greedy_problems.minimum_changes_to_make_alternating_binary_string import Solution
+
+    solution = Solution()
+
+    def _init_variables_1758():
+        return solution
+
+    yield _init_variables_1758
+
+
+class TestClass1758:
+    def test_solution_0(self, init_variables_1758):
+        assert init_variables_1758().min_operations(s="0100") == 1
+
+    def test_solution_1(self, init_variables_1758):
+        assert init_variables_1758().min_operations(s="10") == 0
+
+    def test_solution_2(self, init_variables_1758):
+        assert init_variables_1758().min_operations(s="1111") == 2
