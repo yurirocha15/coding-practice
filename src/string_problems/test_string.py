@@ -208,3 +208,40 @@ class TestClass1759:
 
     def test_solution_2(self, init_variables_1759):
         assert init_variables_1759().count_homogenous(s="zzzzz") == 15
+
+
+"""
+Test 1768. Merge Strings Alternately
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1768():
+    from src.string_problems.merge_strings_alternately import Solution
+
+    solution = Solution()
+
+    def _init_variables_1768():
+        return solution
+
+    yield _init_variables_1768
+
+
+class TestClass1768:
+    def test_solution_0(self, init_variables_1768):
+        assert (
+            init_variables_1768().merge_alternately(word1="abc", word2="pqr")
+            == "apbqcr"
+        )
+
+    def test_solution_1(self, init_variables_1768):
+        assert (
+            init_variables_1768().merge_alternately(word1="ab", word2="pqrs")
+            == "apbqrs"
+        )
+
+    def test_solution_2(self, init_variables_1768):
+        assert (
+            init_variables_1768().merge_alternately(word1="abcd", word2="pq")
+            == "apbqcd"
+        )
