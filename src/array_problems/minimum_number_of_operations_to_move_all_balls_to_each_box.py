@@ -10,18 +10,19 @@ from typing import List
 class Solution:
     def min_operations(self, boxes: str) -> List[int]:
         ret = [0] * len(boxes)
-        cur_cost = [0, 0]
-        for i, b in enumerate(boxes):
-            cur_cost[0] += cur_cost[1]
-            ret[i] += cur_cost[0]
-            if b == "1":
-                cur_cost[1] += 1
-        cur_cost = [0, 0]
-        for i, b in reversed(list(enumerate(boxes))):
-            cur_cost[0] += cur_cost[1]
-            ret[i] += cur_cost[0]
-            if b == "1":
-                cur_cost[1] += 1
+        cur_cost, num_balls = 0, 0
+        cur_cost_2, num_balls_2 = 0, 0
+
+        for idx, rev_idx in zip(range(len(boxes)), range(len(boxes) - 1, -1, -1)):
+            cur_cost += num_balls
+            cur_cost_2 += num_balls_2
+            ret[idx] += cur_cost
+            ret[rev_idx] += cur_cost_2
+            if boxes[idx] == "1":
+                num_balls += 1
+            if boxes[rev_idx] == "1":
+                num_balls_2 += 1
+
         return ret
 
 
