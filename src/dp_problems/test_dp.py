@@ -152,3 +152,64 @@ class TestClass1745:
 
     def test_solution_1(self, init_variables_1745):
         assert init_variables_1745().check_partitioning(s="bcbddxy") is False
+
+
+"""
+Test 1770. Maximum Score from Performing Multiplication Operations
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1770():
+    from src.dp_problems.maximum_score_from_performing_multiplication_operations import Solution
+
+    solution = Solution()
+
+    def _init_variables_1770():
+        return solution
+
+    yield _init_variables_1770
+
+
+class TestClass1770:
+    def test_solution_0(self, init_variables_1770):
+        assert (
+            init_variables_1770().maximum_score(nums=[1, 2, 3], multipliers=[3, 2, 1])
+            == 14
+        )
+
+    def test_solution_1(self, init_variables_1770):
+        assert (
+            init_variables_1770().maximum_score(
+                nums=[-5, -3, -3, -2, 7, 1], multipliers=[-10, -5, 3, 4, 6]
+            )
+            == 102
+        )
+
+
+"""
+Test 1771. Maximize Palindrome Length From Subsequences
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1771():
+    from src.dp_problems.maximize_palindrome_length_from_subsequences import Solution
+
+    solution = Solution()
+
+    def _init_variables_1771():
+        return solution
+
+    yield _init_variables_1771
+
+
+class TestClass1771:
+    def test_solution_0(self, init_variables_1771):
+        assert init_variables_1771().longest_palindrome(word1="cacb", word2="cbba") == 5
+
+    def test_solution_1(self, init_variables_1771):
+        assert init_variables_1771().longest_palindrome(word1="ab", word2="ab") == 3
+
+    def test_solution_2(self, init_variables_1771):
+        assert init_variables_1771().longest_palindrome(word1="aa", word2="bb") == 0
