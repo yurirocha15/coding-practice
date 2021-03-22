@@ -1,3 +1,13 @@
+# to login copy firefox/chrome cookies
+# add to ~/.lc/leetcode/user.json
+# {
+#   "login": <user>,
+#   "loginCSRF": "",
+#   "sessionCSRF": <csrftoken,
+#   "sessionId": <LEETCODE_SESSION>,
+# }
+# and run leetcode user -c
+
 import os
 from dataclasses import dataclass, field
 from typing import List
