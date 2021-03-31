@@ -47,3 +47,4 @@ Coding Practice in Python
 |41 |[Check if One String Swap Can Make Strings Equal](src/string_problems/check_if_one_string_swap_can_make_strings_equal.py)|[string](src/string_problems)|Easy|[Leetcode](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/description/)|
 |42 |[Find Center of Star Graph](src/graph_problems/find_center_of_star_graph.py)|[graph](src/graph_problems)|Medium|[Leetcode](https://leetcode.com/problems/find-center-of-star-graph/description/)|
 |43 |[Maximum Average Pass Ratio](src/heap_problems/maximum_average_pass_ratio.py)|[heap](src/heap_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-average-pass-ratio/description/)|
+|44 |[Maximum Score of a Good Subarray](src/greedy_problems/maximum_score_of_a_good_subarray.py)|[greedy](src/greedy_problems)|Hard|[Leetcode](https://leetcode.com/problems/maximum-score-of-a-good-subarray/description/)|
