@@ -48,3 +48,5 @@ Coding Practice in Python
 |42 |[Find Center of Star Graph](src/graph_problems/find_center_of_star_graph.py)|[graph](src/graph_problems)|Medium|[Leetcode](https://leetcode.com/problems/find-center-of-star-graph/description/)|
 |43 |[Maximum Average Pass Ratio](src/heap_problems/maximum_average_pass_ratio.py)|[heap](src/heap_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-average-pass-ratio/description/)|
 |44 |[Maximum Score of a Good Subarray](src/greedy_problems/maximum_score_of_a_good_subarray.py)|[greedy](src/greedy_problems)|Hard|[Leetcode](https://leetcode.com/problems/maximum-score-of-a-good-subarray/description/)|
+|45 |[Maximum Ascending Subarray Sum](src/array_problems/maximum_ascending_subarray_sum.py)|[array](src/array_problems)|Easy|[Leetcode](https://leetcode.com/problems/maximum-ascending-subarray-sum/description/)|
+|46 |[Number of Orders in the Backlog](src/greedy_problems/number_of_orders_in_the_backlog.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/number-of-orders-in-the-backlog/description/)|
