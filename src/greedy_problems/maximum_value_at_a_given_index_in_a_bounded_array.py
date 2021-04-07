@@ -8,24 +8,23 @@ URL: https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-a
 
 class Solution:
     def max_value(self, n: int, index: int, maxSum: int) -> int:
-        left: int = 1
+        maxSum -= n
+        left: int = 0
         right: int = maxSum + 1
-        ret: int = 1
+        ret: int = 0
 
         def isValidArray(target: int, n: int, index: int, maxSum: int) -> bool:
             first_half: int = (
-                ((2 * target - index) * (index + 1)) // 2
+                (2 * target - index) * (index + 1)
                 if target > index
-                else ((target + 1) * target) // 2 + index + 1 - target
+                else (target + 1) * target
             )
-
             second_half: int = (
-                ((n - index - 1) * (2 * target + index - n)) // 2
+                (n - index - 1) * (2 * target + index - n)
                 if target > n - index
-                else ((target - 1) * target) // 2 + n - index - target
+                else (target - 1) * target
             )
-
-            return first_half + second_half <= maxSum
+            return (first_half + second_half) / 2 <= maxSum
 
         while left < right - 1:
             target: int = (right + left) // 2
@@ -34,7 +33,7 @@ class Solution:
                 left = target
             else:
                 right = target
-        return ret
+        return ret + 1
 
 
 if __name__ == "__main__":
