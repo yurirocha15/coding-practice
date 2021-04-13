@@ -276,3 +276,78 @@ class TestClass1790:
 
     def test_solution_3(self, init_variables_1790):
         assert not init_variables_1790().are_almost_equal(s1="abcd", s2="dcba")
+
+
+"""
+Test 1805. Number of Different Integers in a String
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1805():
+    from src.string_problems.number_of_different_integers_in_a_string import Solution
+
+    solution = Solution()
+
+    def _init_variables_1805():
+        return solution
+
+    yield _init_variables_1805
+
+
+class TestClass1805:
+    def test_solution_0(self, init_variables_1805):
+        assert init_variables_1805().num_different_integers(word="a123bc34d8ef34") == 3
+
+    def test_solution_1(self, init_variables_1805):
+        assert init_variables_1805().num_different_integers(word="leet1234code234") == 2
+
+    def test_solution_2(self, init_variables_1805):
+        assert init_variables_1805().num_different_integers(word="a1b01c001") == 1
+
+
+"""
+Test 1807. Evaluate the Bracket Pairs of a String
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1807():
+    from src.string_problems.evaluate_the_bracket_pairs_of_a_string import Solution
+
+    solution = Solution()
+
+    def _init_variables_1807():
+        return solution
+
+    yield _init_variables_1807
+
+
+class TestClass1807:
+    def test_solution_0(self, init_variables_1807):
+        assert (
+            init_variables_1807().evaluate(
+                s="(name)is(age)yearsold", knowledge=[["name", "bob"], ["age", "two"]]
+            )
+            == "bobistwoyearsold"
+        )
+
+    def test_solution_1(self, init_variables_1807):
+        assert (
+            init_variables_1807().evaluate(s="hi(name)", knowledge=[["a", "b"]])
+            == "hi?"
+        )
+
+    def test_solution_2(self, init_variables_1807):
+        assert (
+            init_variables_1807().evaluate(s="(a)(a)(a)aaa", knowledge=[["a", "yes"]])
+            == "yesyesyesaaa"
+        )
+
+    def test_solution_3(self, init_variables_1807):
+        assert (
+            init_variables_1807().evaluate(
+                s="(a)(b)", knowledge=[["a", "b"], ["b", "a"]]
+            )
+            == "ba"
+        )

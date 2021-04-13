@@ -3,7 +3,7 @@
 # {
 #   "login": <user>,
 #   "loginCSRF": "",
-#   "sessionCSRF": <csrftoken,
+#   "sessionCSRF": <csrftoken>,
 #   "sessionId": <LEETCODE_SESSION>,
 # }
 # and run leetcode user -c

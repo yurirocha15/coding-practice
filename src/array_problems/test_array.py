@@ -269,3 +269,31 @@ class TestClass1800:
 
     def test_solution_3(self, init_variables_1800):
         assert init_variables_1800().max_ascending_sum(nums=[100, 10, 1]) == 100
+
+
+"""
+Test 1806. Minimum Number of Operations to Reinitialize a Permutation
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1806():
+    from src.array_problems.minimum_number_of_operations_to_reinitialize_a_permutation import Solution
+
+    solution = Solution()
+
+    def _init_variables_1806():
+        return solution
+
+    yield _init_variables_1806
+
+
+class TestClass1806:
+    def test_solution_0(self, init_variables_1806):
+        assert init_variables_1806().reinitialize_permutation(n=2) == 1
+
+    def test_solution_1(self, init_variables_1806):
+        assert init_variables_1806().reinitialize_permutation(n=4) == 2
+
+    def test_solution_2(self, init_variables_1806):
+        assert init_variables_1806().reinitialize_permutation(n=6) == 4
