@@ -328,3 +328,28 @@ class TestClass1802:
 
     def test_solution_1(self, init_variables_1802):
         assert init_variables_1802().max_value(n=6, index=1, maxSum=10) == 3
+
+
+"""
+Test 1808. Maximize Number of Nice Divisors
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1808():
+    from src.greedy_problems.maximize_number_of_nice_divisors import Solution
+
+    solution = Solution()
+
+    def _init_variables_1808():
+        return solution
+
+    yield _init_variables_1808
+
+
+class TestClass1808:
+    def test_solution_0(self, init_variables_1808):
+        assert init_variables_1808().max_nice_divisors(primeFactors=5) == 6
+
+    def test_solution_1(self, init_variables_1808):
+        assert init_variables_1808().max_nice_divisors(primeFactors=8) == 18
