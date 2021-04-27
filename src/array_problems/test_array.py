@@ -297,3 +297,28 @@ class TestClass1806:
 
     def test_solution_2(self, init_variables_1806):
         assert init_variables_1806().reinitialize_permutation(n=6) == 4
+
+
+"""
+Test 1823. Find the Winner of the Circular Game
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1823():
+    from src.array_problems.find_the_winner_of_the_circular_game import Solution
+
+    solution = Solution()
+
+    def _init_variables_1823():
+        return solution
+
+    yield _init_variables_1823
+
+
+class TestClass1823:
+    def test_solution_0(self, init_variables_1823):
+        assert init_variables_1823().find_the_winner(n=5, k=2) == 3
+
+    def test_solution_1(self, init_variables_1823):
+        assert init_variables_1823().find_the_winner(n=6, k=5) == 1
