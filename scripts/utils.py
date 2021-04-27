@@ -36,3 +36,16 @@ def create_folder_if_needed(folder: str) -> None:
 
 def get_file_name(question: str) -> str:
     return "_".join(question.split()).lower() + ".py"
+
+
+def leetcode_cli_exists() -> bool:
+    return os.path.exists(os.path.join("bin", "dist", "leetcode-cli"))
+
+
+def download_leetcode_cli():
+    os.system("mkdir -p bin")
+    os.system(
+        "wget -P bin https://github.com/skygragon/leetcode-cli/releases/download/2.6.2/leetcode-cli.node10.linux.x64.tar.gz"
+    )
+    os.system("tar -xvzf bin/leetcode-cli.node10.linux.x64.tar.gz -C bin")
+    os.system("rm bin/leetcode-cli.node10.linux.x64.tar.gz")

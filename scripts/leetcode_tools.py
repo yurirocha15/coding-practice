@@ -13,7 +13,13 @@ from dataclasses import dataclass, field
 from typing import List
 
 import clize
-from utils import cammel_to_snake_case, create_folder_if_needed, get_file_name
+from utils import (
+    cammel_to_snake_case,
+    create_folder_if_needed,
+    download_leetcode_cli,
+    get_file_name,
+    leetcode_cli_exists,
+)
 
 
 @dataclass
@@ -30,8 +36,12 @@ class QuestionData:
 
 
 def get_question(id: int):
+    if not leetcode_cli_exists():
+        print("Please run 'make setup' to download the leetcode-cli")
+        return
+
     data = QuestionData(id=id)
-    os.system("~/Documents/leetcode-cli/leetcode-cli show " + str(id) + " > tmp.txt")
+    os.system("bin/dist/leetcode-cli show " + str(id) + " > tmp.txt")
     with open("tmp.txt", "r") as f:
         for i, line in enumerate(f):
             print(line)
@@ -48,11 +58,7 @@ def get_question(id: int):
                 if words[1] in ["Easy", "Medium", "Hard"]:
                     data.difficulty = words[1]
 
-    os.system(
-        "~/Documents/leetcode-cli/leetcode-cli show -c -l python3 "
-        + str(id)
-        + " > tmp.txt"
-    )
+    os.system("bin/dist/leetcode-cli show -c -l python3 " + str(id) + " > tmp.txt")
     with open("tmp.txt", "r") as f:
         for line in f:
             data.code.append(line)
@@ -133,5 +139,10 @@ def submit_question():
     pass
 
 
+def download_client():
+    if not leetcode_cli_exists():
+        download_leetcode_cli()
+
+
 if __name__ == "__main__":
-    clize.run(get_question, submit_question)
+    clize.run(get_question, submit_question, download_client)
