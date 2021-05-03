@@ -6,10 +6,11 @@
 #   "sessionCSRF": <csrftoken>,
 #   "sessionId": <LEETCODE_SESSION>,
 # }
-# and run leetcode user -c
+# and run ./bin/dist/leetcode-cli user -c
 
 import os
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import List
 
 import clize
@@ -41,7 +42,9 @@ def get_question(id: int):
         return
 
     data = QuestionData(id=id)
-    os.system("bin/dist/leetcode-cli show " + str(id) + " > tmp.txt")
+    os.system(
+        os.path.join("bin", "dist", "leetcode-cli") + " show " + str(id) + " > tmp.txt"
+    )
     with open("tmp.txt", "r") as f:
         for i, line in enumerate(f):
             print(line)
@@ -50,20 +53,25 @@ def get_question(id: int):
             elif "https://leetcode" in line:
                 data.url = line[:-1]
             elif "Input: " in line:
-                data.inputs.append(line[7:-1])
+                data.inputs.append(line[7:-1].replace("null", "None"))
             elif "Output: " in line:
-                data.outputs.append(line[8:-1])
+                data.outputs.append(line[8:-1].replace("null", "None"))
             elif line[0] == "*":
                 words = line.split()
                 if words[1] in ["Easy", "Medium", "Hard"]:
                     data.difficulty = words[1]
 
-    os.system("bin/dist/leetcode-cli show -c -l python3 " + str(id) + " > tmp.txt")
+    os.system(
+        os.path.join("bin", "dist", "leetcode-cli")
+        + " show -c -l python3 "
+        + str(id)
+        + " > tmp.txt"
+    )
     with open("tmp.txt", "r") as f:
         for line in f:
-            data.code.append(line)
-            if len(data.code) >= 2:
-                break
+            line = line.rstrip()
+            if line:
+                data.code.append(line)
 
     data.code[-1], data.function_name = cammel_to_snake_case(data.code[-1])
 
@@ -84,7 +92,7 @@ def get_question(id: int):
         f.write("\n")
         f.write("\n")
         for line in data.code:
-            f.write(line)
+            f.write(line + "\n")
         f.write("        pass\n")
         f.write("\n")
         f.write("\n")
@@ -92,7 +100,15 @@ def get_question(id: int):
         f.write("    solution = Solution()\n")
         for i in range(len(data.inputs)):
             f.write(
-                f"    assert solution.{data.function_name}({data.inputs[i]}) == {data.outputs[i]}\n"
+                f"    assert"
+                + (" not" if data.outputs[i] == "false" else "")
+                + f" solution.{data.function_name}({data.inputs[i]})"
+                + (
+                    f" == {data.outputs[i]}"
+                    if data.outputs[i] not in ["true", "false"]
+                    else ""
+                )
+                + "\n"
             )
         f.write("")
 
@@ -122,14 +138,23 @@ def get_question(id: int):
             f.write("\n")
             f.write(f"    def test_solution_{i}(self, init_variables_{data.id}):\n")
             f.write(
-                f"        assert init_variables_{data.id}().{data.function_name}({data.inputs[i]}) == {data.outputs[i]}\n"
+                f"        assert"
+                + (" not" if data.outputs[i] == "false" else "")
+                + f" init_variables_{data.id}().{data.function_name}({data.inputs[i]})"
+                + (
+                    f" == {data.outputs[i]}"
+                    if data.outputs[i] not in ["true", "false"]
+                    else ""
+                )
+                + "\n"
             )
 
     # update readme
     with open("README.md", "r+") as f:
         for line in f:
             pass
-        last_id = int(line.split()[0][1:])
+        last_id = line.split()[0][1:]
+        last_id = int(last_id) if last_id.isnumeric() else -1
         f.write(
             f"\n|{last_id + 1} |[{data.title}](src/{folder}_problems/{data.file_name})|[{folder}](src/{folder}_problems)|{data.difficulty}|[Leetcode]({data.url})|"
         )
@@ -144,5 +169,26 @@ def download_client():
         download_leetcode_cli()
 
 
+def relogin():
+    home_folder = str(Path.home())
+    # Logout. This erases the user.json file
+    os.system(os.path.join("bin", "dist", "leetcode-cli") + " user -L")
+    os.system("mkdir -p " + os.path.join(home_folder, ".lc", "leetcode"))
+    print("Please insert your leetcode user ID:")
+    userid = str(input())
+    print("Please insert your crsftoken:")
+    crsftoken = str(input())
+    print("Please insert your LEETCODE_SESSION:")
+    leetcode_session = str(input())
+    with open(os.path.join(home_folder, ".lc", "leetcode", "user.json"), "w") as f:
+        f.write("{\n")
+        f.write('\t"login": "' + userid + '",\n')
+        f.write('\t"loginCSRF": "",\n')
+        f.write('\t"sessionCSRF": "' + crsftoken + '",\n')
+        f.write('\t"sessionId": "' + leetcode_session + '"\n')
+        f.write("}")
+    os.system(os.path.join("bin", "dist", "leetcode-cli") + " user -c")
+
+
 if __name__ == "__main__":
-    clize.run(get_question, submit_question, download_client)
+    clize.run(get_question, submit_question, download_client, relogin)
