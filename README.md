@@ -90,3 +90,6 @@ $ make get-question ID=<question_id>
 |51 |[Maximize Number of Nice Divisors](src/greedy_problems/maximize_number_of_nice_divisors.py)|[greedy](src/greedy_problems)|Hard|[Leetcode](https://leetcode.com/problems/maximize-number-of-nice-divisors/description/)|
 |52 |[Sign of the Product of an Array](src/math_problems/sign_of_the_product_of_an_array.py)|[math](src/math_problems)|Easy|[Leetcode](https://leetcode.com/problems/sign-of-the-product-of-an-array/description/)|
 |53 |[Find the Winner of the Circular Game](src/array_problems/find_the_winner_of_the_circular_game.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/)|
+|54 |[Check if the Sentence Is Pangram](src/string_problems/check_if_the_sentence_is_pangram.py)|[string](src/string_problems)|Easy|[Leetcode](https://leetcode.com/problems/check-if-the-sentence-is-pangram/description/)|
+|55 |[Maximum Ice Cream Bars](src/array_problems/maximum_ice_cream_bars.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-ice-cream-bars/description/)|
+|56 |[Single-Threaded CPU](src/heap_problems/singlethreaded_cpu.py)|[heap](src/heap_problems)|Medium|[Leetcode](https://leetcode.com/problems/single-threaded-cpu/description/)|
