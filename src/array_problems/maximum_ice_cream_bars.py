@@ -17,12 +17,12 @@ class Solution:
 # O(NlogN) / O(1)
 # class Solution:
 #     def max_ice_cream(self, costs: List[int], coins: int) -> int:
-# costs.sort()
-# for idx, cost in enumerate(costs):
-#     coins -= cost
-#     if coins < 0:
-#         return idx
-# return len(costs)
+#         costs.sort()
+#         for idx, cost in enumerate(costs):
+#             coins -= cost
+#             if coins < 0:
+#                 return idx
+#         return len(costs)
 
 
 if __name__ == "__main__":
