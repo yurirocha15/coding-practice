@@ -4,18 +4,25 @@ Platform: LeetCode
 Problem: 1833. Maximum Ice Cream Bars
 URL: https://leetcode.com/problems/maximum-ice-cream-bars/description/
 """
+from itertools import accumulate
 from typing import List
 
 
-# O(NlogN) / O(1)
+# O(NlogN) / O(N)
 class Solution:
     def max_ice_cream(self, costs: List[int], coins: int) -> int:
-        costs.sort()
-        for idx, cost in enumerate(costs):
-            coins -= cost
-            if coins < 0:
-                return idx
-        return len(costs)
+        return len(list(filter(lambda c: c <= coins, accumulate(sorted(costs)))))
+
+
+# O(NlogN) / O(1)
+# class Solution:
+#     def max_ice_cream(self, costs: List[int], coins: int) -> int:
+# costs.sort()
+# for idx, cost in enumerate(costs):
+#     coins -= cost
+#     if coins < 0:
+#         return idx
+# return len(costs)
 
 
 if __name__ == "__main__":
