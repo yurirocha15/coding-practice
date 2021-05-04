@@ -28,3 +28,28 @@ class TestClass1822:
 
     def test_solution_2(self, init_variables_1822):
         assert init_variables_1822().array_sign(nums=[-1, 1, -1, 1, -1]) == -1
+
+
+"""
+Test 1835. Find XOR Sum of All Pairs Bitwise AND
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1835():
+    from src.math_problems.find_xor_sum_of_all_pairs_bitwise_and import Solution
+
+    solution = Solution()
+
+    def _init_variables_1835():
+        return solution
+
+    yield _init_variables_1835
+
+
+class TestClass1835:
+    def test_solution_0(self, init_variables_1835):
+        assert init_variables_1835().get_x_o_r_sum(arr1=[1, 2, 3], arr2=[6, 5]) == 0
+
+    def test_solution_1(self, init_variables_1835):
+        assert init_variables_1835().get_x_o_r_sum(arr1=[12], arr2=[4]) == 4
