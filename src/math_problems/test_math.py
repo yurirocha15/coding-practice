@@ -53,3 +53,28 @@ class TestClass1835:
 
     def test_solution_1(self, init_variables_1835):
         assert init_variables_1835().get_x_o_r_sum(arr1=[12], arr2=[4]) == 4
+
+
+"""
+Test 1837. Sum of Digits in Base K
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1837():
+    from src.math_problems.sum_of_digits_in_base_k import Solution
+
+    solution = Solution()
+
+    def _init_variables_1837():
+        return solution
+
+    yield _init_variables_1837
+
+
+class TestClass1837:
+    def test_solution_0(self, init_variables_1837):
+        assert init_variables_1837().sum_base(n=34, k=6) == 9
+
+    def test_solution_1(self, init_variables_1837):
+        assert init_variables_1837().sum_base(n=10, k=10) == 1

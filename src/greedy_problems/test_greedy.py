@@ -353,3 +353,31 @@ class TestClass1808:
 
     def test_solution_1(self, init_variables_1808):
         assert init_variables_1808().max_nice_divisors(primeFactors=8) == 18
+
+
+"""
+Test 1838. Frequency of the Most Frequent Element
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1838():
+    from src.greedy_problems.frequency_of_the_most_frequent_element import Solution
+
+    solution = Solution()
+
+    def _init_variables_1838():
+        return solution
+
+    yield _init_variables_1838
+
+
+class TestClass1838:
+    def test_solution_0(self, init_variables_1838):
+        assert init_variables_1838().max_frequency(nums=[1, 2, 4], k=5) == 3
+
+    def test_solution_1(self, init_variables_1838):
+        assert init_variables_1838().max_frequency(nums=[1, 4, 8, 13], k=5) == 2
+
+    def test_solution_2(self, init_variables_1838):
+        assert init_variables_1838().max_frequency(nums=[3, 9, 6], k=2) == 1
