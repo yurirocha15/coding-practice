@@ -103,3 +103,4 @@ $ make get-question ID=<question_id>
 |58 |[Longest Substring Of All Vowels in Order](src/string_problems/longest_substring_of_all_vowels_in_order.py)|[string](src/string_problems)|Medium|[Leetcode](https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/description/)|
 |59 |[Sum of Digits in Base K](src/math_problems/sum_of_digits_in_base_k.py)|[math](src/math_problems)|Easy|[Leetcode](https://leetcode.com/problems/sum-of-digits-in-base-k/description/)|
 |60 |[Frequency of the Most Frequent Element](src/greedy_problems/frequency_of_the_most_frequent_element.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/)|
+|61 |[Maximum Building Height](src/greedy_problems/maximum_building_height.py)|[greedy](src/greedy_problems)|Hard|[Leetcode](https://leetcode.com/problems/maximum-building-height/description/)|
