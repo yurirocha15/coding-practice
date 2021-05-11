@@ -378,3 +378,41 @@ class TestClass1832:
 
     def test_solution_1(self, init_variables_1832):
         assert not init_variables_1832().check_if_pangram(sentence="leetcode")
+
+
+"""
+Test 1839. Longest Substring Of All Vowels in Order
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1839():
+    from src.string_problems.longest_substring_of_all_vowels_in_order import Solution
+
+    solution = Solution()
+
+    def _init_variables_1839():
+        return solution
+
+    yield _init_variables_1839
+
+
+class TestClass1839:
+    def test_solution_0(self, init_variables_1839):
+        assert (
+            init_variables_1839().longest_beautiful_substring(
+                word="aeiaaioaaaaeiiiiouuuooaauuaeiu"
+            )
+            == 13
+        )
+
+    def test_solution_1(self, init_variables_1839):
+        assert (
+            init_variables_1839().longest_beautiful_substring(
+                word="aeeeiiiioooauuuaeiou"
+            )
+            == 5
+        )
+
+    def test_solution_2(self, init_variables_1839):
+        assert init_variables_1839().longest_beautiful_substring(word="a") == 0
