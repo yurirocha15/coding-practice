@@ -20,6 +20,7 @@ class Solution:
         last_idx = 0
         letters: Set[str] = set(last_c)
         ret = 0
+        word += "a"
         for i in range(1, len(word)):
             if word[i] not in allowed[last_c]:
                 if len(letters) == 5:
@@ -28,8 +29,6 @@ class Solution:
                 letters.clear()
             last_c = word[i]
             letters.add(word[i])
-        if len(letters) == 5:
-            ret = max(ret, len(word) - last_idx)
         return ret
 
 
