@@ -416,3 +416,46 @@ class TestClass1840:
             )
             == 5
         )
+
+
+"""
+Test 1855. Maximum Distance Between a Pair of Values
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1855():
+    from src.greedy_problems.maximum_distance_between_a_pair_of_values import Solution
+
+    solution = Solution()
+
+    def _init_variables_1855():
+        return solution
+
+    yield _init_variables_1855
+
+
+class TestClass1855:
+    def test_solution_0(self, init_variables_1855):
+        assert (
+            init_variables_1855().max_distance(
+                nums1=[55, 30, 5, 4, 2], nums2=[100, 20, 10, 10, 5]
+            )
+            == 2
+        )
+
+    def test_solution_1(self, init_variables_1855):
+        assert (
+            init_variables_1855().max_distance(nums1=[2, 2, 2], nums2=[10, 10, 1]) == 1
+        )
+
+    def test_solution_2(self, init_variables_1855):
+        assert (
+            init_variables_1855().max_distance(
+                nums1=[30, 29, 19, 5], nums2=[25, 25, 25, 25, 25]
+            )
+            == 2
+        )
+
+    def test_solution_3(self, init_variables_1855):
+        assert init_variables_1855().max_distance(nums1=[5, 4], nums2=[3, 2]) == 0

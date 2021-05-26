@@ -213,3 +213,63 @@ class TestClass1771:
 
     def test_solution_2(self, init_variables_1771):
         assert init_variables_1771().longest_palindrome(word1="aa", word2="bb") == 0
+
+
+"""
+Test 1856. Maximum Subarray Min-Product
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1856():
+    from src.dp_problems.maximum_subarray_minproduct import Solution
+
+    solution = Solution()
+
+    def _init_variables_1856():
+        return solution
+
+    yield _init_variables_1856
+
+
+class TestClass1856:
+    def test_solution_0(self, init_variables_1856):
+        assert init_variables_1856().max_sum_min_product(nums=[1, 2, 3, 2]) == 14
+
+    def test_solution_1(self, init_variables_1856):
+        assert init_variables_1856().max_sum_min_product(nums=[2, 3, 3, 1, 2]) == 18
+
+    def test_solution_2(self, init_variables_1856):
+        assert init_variables_1856().max_sum_min_product(nums=[3, 1, 5, 6, 4, 2]) == 60
+
+
+"""
+Test 1857. Largest Color Value in a Directed Graph
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1857():
+    from src.dp_problems.largest_color_value_in_a_directed_graph import Solution
+
+    solution = Solution()
+
+    def _init_variables_1857():
+        return solution
+
+    yield _init_variables_1857
+
+
+class TestClass1857:
+    def test_solution_0(self, init_variables_1857):
+        assert (
+            init_variables_1857().largest_path_value(
+                colors="abaca", edges=[[0, 1], [0, 2], [2, 3], [3, 4]]
+            )
+            == 3
+        )
+
+    def test_solution_1(self, init_variables_1857):
+        assert (
+            init_variables_1857().largest_path_value(colors="a", edges=[[0, 0]]) == -1
+        )

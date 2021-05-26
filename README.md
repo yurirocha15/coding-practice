@@ -104,3 +104,7 @@ $ make get-question ID=<question_id>
 |59 |[Sum of Digits in Base K](src/math_problems/sum_of_digits_in_base_k.py)|[math](src/math_problems)|Easy|[Leetcode](https://leetcode.com/problems/sum-of-digits-in-base-k/description/)|
 |60 |[Frequency of the Most Frequent Element](src/greedy_problems/frequency_of_the_most_frequent_element.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/)|
 |61 |[Maximum Building Height](src/greedy_problems/maximum_building_height.py)|[greedy](src/greedy_problems)|Hard|[Leetcode](https://leetcode.com/problems/maximum-building-height/description/)|
+|62 |[Maximum Population Year](src/array_problems/maximum_population_year.py)|[array](src/array_problems)|Easy|[Leetcode](https://leetcode.com/problems/maximum-population-year/description/)|
+|63 |[Maximum Distance Between a Pair of Values](src/greedy_problems/maximum_distance_between_a_pair_of_values.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/description/)|
+|64 |[Maximum Subarray Min-Product](src/dp_problems/maximum_subarray_minproduct.py)|[dp](src/dp_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-subarray-min-product/description/)|
+|65 |[Largest Color Value in a Directed Graph](src/dp_problems/largest_color_value_in_a_directed_graph.py)|[dp](src/dp_problems)|Hard|[Leetcode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)|
