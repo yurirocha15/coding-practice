@@ -4,7 +4,6 @@ Platform: LeetCode
 Problem: 1857. Largest Color Value in a Directed Graph
 URL: https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/
 """
-from functools import lru_cache
 from typing import List
 
 
@@ -16,7 +15,6 @@ class Solution:
         for edge in edges:
             adj_mat[edge[0]].append(edge[1])
 
-        @lru_cache(None)
         def dfs(node: int) -> int:
             if not visited[node]:
                 visited[node] = -1
