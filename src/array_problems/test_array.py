@@ -387,3 +387,31 @@ class TestClass1854:
             )
             == 1960
         )
+
+
+"""
+Test 1869. Longer Contiguous Segments of Ones than Zeros
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1869():
+    from src.array_problems.longer_contiguous_segments_of_ones_than_zeros import Solution
+
+    solution = Solution()
+
+    def _init_variables_1869():
+        return solution
+
+    yield _init_variables_1869
+
+
+class TestClass1869:
+    def test_solution_0(self, init_variables_1869):
+        assert init_variables_1869().check_zero_ones(s="1101")
+
+    def test_solution_1(self, init_variables_1869):
+        assert not init_variables_1869().check_zero_ones(s="111000")
+
+    def test_solution_2(self, init_variables_1869):
+        assert not init_variables_1869().check_zero_ones(s="110100010")

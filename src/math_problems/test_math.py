@@ -78,3 +78,31 @@ class TestClass1837:
 
     def test_solution_1(self, init_variables_1837):
         assert init_variables_1837().sum_base(n=10, k=10) == 1
+
+
+"""
+Test 1870. Minimum Speed to Arrive on Time
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1870():
+    from src.math_problems.minimum_speed_to_arrive_on_time import Solution
+
+    solution = Solution()
+
+    def _init_variables_1870():
+        return solution
+
+    yield _init_variables_1870
+
+
+class TestClass1870:
+    def test_solution_0(self, init_variables_1870):
+        assert init_variables_1870().min_speed_on_time(dist=[1, 3, 2], hour=6) == 1
+
+    def test_solution_1(self, init_variables_1870):
+        assert init_variables_1870().min_speed_on_time(dist=[1, 3, 2], hour=2.7) == 3
+
+    def test_solution_2(self, init_variables_1870):
+        assert init_variables_1870().min_speed_on_time(dist=[1, 3, 2], hour=1.9) == -1

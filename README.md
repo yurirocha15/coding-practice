@@ -108,3 +108,7 @@ $ make get-question ID=<question_id>
 |63 |[Maximum Distance Between a Pair of Values](src/greedy_problems/maximum_distance_between_a_pair_of_values.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/description/)|
 |64 |[Maximum Subarray Min-Product](src/dp_problems/maximum_subarray_minproduct.py)|[dp](src/dp_problems)|Medium|[Leetcode](https://leetcode.com/problems/maximum-subarray-min-product/description/)|
 |65 |[Largest Color Value in a Directed Graph](src/dp_problems/largest_color_value_in_a_directed_graph.py)|[dp](src/dp_problems)|Hard|[Leetcode](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)|
+|66 |[Longer Contiguous Segments of Ones than Zeros](src/array_problems/longer_contiguous_segments_of_ones_than_zeros.py)|[array](src/array_problems)|Easy|[Leetcode](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/description/)|
+|67 |[Minimum Speed to Arrive on Time](src/math_problems/minimum_speed_to_arrive_on_time.py)|[math](src/math_problems)|Medium|[Leetcode](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/description/)|
+|68 |[Jump Game VII](src/greedy_problems/jump_game_vii.py)|[greedy](src/greedy_problems)|Medium|[Leetcode](https://leetcode.com/problems/jump-game-vii/description/)|
+|69 |[Stone Game VIII](src/dp_problems/stone_game_viii.py)|[dp](src/dp_problems)|Hard|[Leetcode](https://leetcode.com/problems/stone-game-viii/description/)|

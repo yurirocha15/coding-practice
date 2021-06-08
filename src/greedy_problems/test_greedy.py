@@ -459,3 +459,28 @@ class TestClass1855:
 
     def test_solution_3(self, init_variables_1855):
         assert init_variables_1855().max_distance(nums1=[5, 4], nums2=[3, 2]) == 0
+
+
+"""
+Test 1871. Jump Game VII
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1871():
+    from src.greedy_problems.jump_game_vii import Solution
+
+    solution = Solution()
+
+    def _init_variables_1871():
+        return solution
+
+    yield _init_variables_1871
+
+
+class TestClass1871:
+    def test_solution_0(self, init_variables_1871):
+        assert init_variables_1871().can_reach(s="011010", minJump=2, maxJump=3)
+
+    def test_solution_1(self, init_variables_1871):
+        assert not init_variables_1871().can_reach(s="01101110", minJump=2, maxJump=3)
