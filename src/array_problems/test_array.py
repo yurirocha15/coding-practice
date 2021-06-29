@@ -450,3 +450,85 @@ class TestClass1886:
             mat=[[0, 0, 0], [0, 1, 0], [1, 1, 1]],
             target=[[1, 1, 1], [0, 1, 0], [0, 0, 0]],
         )
+
+
+"""
+Test 1898. Maximum Number of Removable Characters
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1898():
+    from src.array_problems.maximum_number_of_removable_characters import Solution
+
+    solution = Solution()
+
+    def _init_variables_1898():
+        return solution
+
+    yield _init_variables_1898
+
+
+class TestClass1898:
+    def test_solution_0(self, init_variables_1898):
+        assert (
+            init_variables_1898().maximum_removals(
+                s="abcacb", p="ab", removable=[3, 1, 0]
+            )
+            == 2
+        )
+
+    def test_solution_1(self, init_variables_1898):
+        assert (
+            init_variables_1898().maximum_removals(
+                s="abcbddddd", p="abcd", removable=[3, 2, 1, 4, 5, 6]
+            )
+            == 1
+        )
+
+    def test_solution_2(self, init_variables_1898):
+        assert (
+            init_variables_1898().maximum_removals(
+                s="abcab", p="abc", removable=[0, 1, 2, 3, 4]
+            )
+            == 0
+        )
+
+
+"""
+Test 1899. Merge Triplets to Form Target Triplet
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1899():
+    from src.array_problems.merge_triplets_to_form_target_triplet import Solution
+
+    solution = Solution()
+
+    def _init_variables_1899():
+        return solution
+
+    yield _init_variables_1899
+
+
+class TestClass1899:
+    def test_solution_0(self, init_variables_1899):
+        assert init_variables_1899().merge_triplets(
+            triplets=[[2, 5, 3], [1, 8, 4], [1, 7, 5]], target=[2, 7, 5]
+        )
+
+    def test_solution_1(self, init_variables_1899):
+        assert init_variables_1899().merge_triplets(
+            triplets=[[1, 3, 4], [2, 5, 8]], target=[2, 5, 8]
+        )
+
+    def test_solution_2(self, init_variables_1899):
+        assert init_variables_1899().merge_triplets(
+            triplets=[[2, 5, 3], [2, 3, 4], [1, 2, 5], [5, 2, 3]], target=[5, 5, 5]
+        )
+
+    def test_solution_3(self, init_variables_1899):
+        assert not init_variables_1899().merge_triplets(
+            triplets=[[3, 4, 5], [4, 5, 6]], target=[3, 2, 5]
+        )
