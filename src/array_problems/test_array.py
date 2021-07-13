@@ -532,3 +532,33 @@ class TestClass1899:
         assert not init_variables_1899().merge_triplets(
             triplets=[[3, 4, 5], [4, 5, 6]], target=[3, 2, 5]
         )
+
+
+"""
+Test 1914. Cyclically Rotating a Grid
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1914():
+    from src.array_problems.cyclically_rotating_a_grid import Solution
+
+    solution = Solution()
+
+    def _init_variables_1914():
+        return solution
+
+    yield _init_variables_1914
+
+
+class TestClass1914:
+    def test_solution_0(self, init_variables_1914):
+        assert init_variables_1914().rotate_grid(grid=[[40, 10], [30, 20]], k=1) == [
+            [10, 20],
+            [40, 30],
+        ]
+
+    def test_solution_1(self, init_variables_1914):
+        assert init_variables_1914().rotate_grid(
+            grid=[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], k=2
+        ) == [[3, 4, 8, 12], [2, 11, 10, 16], [1, 7, 6, 15], [5, 9, 13, 14]]
