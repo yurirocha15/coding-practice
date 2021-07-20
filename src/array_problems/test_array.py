@@ -562,3 +562,81 @@ class TestClass1914:
         assert init_variables_1914().rotate_grid(
             grid=[[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]], k=2
         ) == [[3, 4, 8, 12], [2, 11, 10, 16], [1, 7, 6, 15], [5, 9, 13, 14]]
+
+
+"""
+Test 1920. Build Array from Permutation
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1920():
+    from src.array_problems.build_array_from_permutation import Solution
+
+    solution = Solution()
+
+    def _init_variables_1920():
+        return solution
+
+    yield _init_variables_1920
+
+
+class TestClass1920:
+    def test_solution_0(self, init_variables_1920):
+        assert init_variables_1920().build_array(nums=[0, 2, 1, 5, 3, 4]) == [
+            0,
+            1,
+            2,
+            4,
+            5,
+            3,
+        ]
+
+    def test_solution_1(self, init_variables_1920):
+        assert init_variables_1920().build_array(nums=[5, 0, 1, 2, 3, 4]) == [
+            4,
+            5,
+            0,
+            1,
+            2,
+            3,
+        ]
+
+
+"""
+Test 1921. Eliminate Maximum Number of Monsters
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1921():
+    from src.array_problems.eliminate_maximum_number_of_monsters import Solution
+
+    solution = Solution()
+
+    def _init_variables_1921():
+        return solution
+
+    yield _init_variables_1921
+
+
+class TestClass1921:
+    def test_solution_0(self, init_variables_1921):
+        assert (
+            init_variables_1921().eliminate_maximum(dist=[1, 3, 4], speed=[1, 1, 1])
+            == 3
+        )
+
+    def test_solution_1(self, init_variables_1921):
+        assert (
+            init_variables_1921().eliminate_maximum(
+                dist=[1, 1, 2, 3], speed=[1, 1, 1, 1]
+            )
+            == 1
+        )
+
+    def test_solution_2(self, init_variables_1921):
+        assert (
+            init_variables_1921().eliminate_maximum(dist=[3, 2, 4], speed=[5, 3, 2])
+            == 1
+        )

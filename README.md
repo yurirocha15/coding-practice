@@ -121,3 +121,6 @@ $ make get-question ID=<question_id>
 |76 |[Merge Triplets to Form Target Triplet](src/array_problems/merge_triplets_to_form_target_triplet.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/merge-triplets-to-form-target-triplet/description/)|
 |77 |[Maximum Product Difference Between Two Pairs](src/math_problems/maximum_product_difference_between_two_pairs.py)|[math](src/math_problems)|Easy|[Leetcode](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/description/)|
 |78 |[Cyclically Rotating a Grid](src/array_problems/cyclically_rotating_a_grid.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/cyclically-rotating-a-grid/description/)|
+|79 |[Build Array from Permutation](src/array_problems/build_array_from_permutation.py)|[array](src/array_problems)|Easy|[Leetcode](https://leetcode.com/problems/build-array-from-permutation/description/)|
+|80 |[Eliminate Maximum Number of Monsters](src/array_problems/eliminate_maximum_number_of_monsters.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/description/)|
+|81 |[Count Good Numbers](src/math_problems/count_good_numbers.py)|[math](src/math_problems)|Medium|[Leetcode](https://leetcode.com/problems/count-good-numbers/description/)|

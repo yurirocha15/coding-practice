@@ -134,3 +134,31 @@ class TestClass1913:
             init_variables_1913().max_product_difference(nums=[4, 2, 5, 9, 7, 4, 8])
             == 64
         )
+
+
+"""
+Test 1922. Count Good Numbers
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1922():
+    from src.math_problems.count_good_numbers import Solution
+
+    solution = Solution()
+
+    def _init_variables_1922():
+        return solution
+
+    yield _init_variables_1922
+
+
+class TestClass1922:
+    def test_solution_0(self, init_variables_1922):
+        assert init_variables_1922().count_good_numbers(n=1) == 5
+
+    def test_solution_1(self, init_variables_1922):
+        assert init_variables_1922().count_good_numbers(n=4) == 400
+
+    def test_solution_2(self, init_variables_1922):
+        assert init_variables_1922().count_good_numbers(n=50) == 564908303
