@@ -124,3 +124,6 @@ $ make get-question ID=<question_id>
 |79 |[Build Array from Permutation](src/array_problems/build_array_from_permutation.py)|[array](src/array_problems)|Easy|[Leetcode](https://leetcode.com/problems/build-array-from-permutation/description/)|
 |80 |[Eliminate Maximum Number of Monsters](src/array_problems/eliminate_maximum_number_of_monsters.py)|[array](src/array_problems)|Medium|[Leetcode](https://leetcode.com/problems/eliminate-maximum-number-of-monsters/description/)|
 |81 |[Count Good Numbers](src/math_problems/count_good_numbers.py)|[math](src/math_problems)|Medium|[Leetcode](https://leetcode.com/problems/count-good-numbers/description/)|
+|82 |[Concatenation of Array](src/array_problems/concatenation_of_array.py)|[array](src/array_problems)|Easy|[Leetcode](https://leetcode.com/problems/concatenation-of-array/description/)|
+|83 |[Unique Length-3 Palindromic Subsequences](src/string_problems/unique_length3_palindromic_subsequences.py)|[string](src/string_problems)|Medium|[Leetcode](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/description/)|
+|84 |[Painting a Grid With Three Different Colors](src/dp_problems/painting_a_grid_with_three_different_colors.py)|[dp](src/dp_problems)|Hard|[Leetcode](https://leetcode.com/problems/painting-a-grid-with-three-different-colors/description/)|

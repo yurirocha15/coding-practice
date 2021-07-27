@@ -640,3 +640,44 @@ class TestClass1921:
             init_variables_1921().eliminate_maximum(dist=[3, 2, 4], speed=[5, 3, 2])
             == 1
         )
+
+
+"""
+Test 1929. Concatenation of Array
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1929():
+    from src.array_problems.concatenation_of_array import Solution
+
+    solution = Solution()
+
+    def _init_variables_1929():
+        return solution
+
+    yield _init_variables_1929
+
+
+class TestClass1929:
+    def test_solution_0(self, init_variables_1929):
+        assert init_variables_1929().get_concatenation(nums=[1, 2, 1]) == [
+            1,
+            2,
+            1,
+            1,
+            2,
+            1,
+        ]
+
+    def test_solution_1(self, init_variables_1929):
+        assert init_variables_1929().get_concatenation(nums=[1, 3, 2, 1]) == [
+            1,
+            3,
+            2,
+            1,
+            1,
+            3,
+            2,
+            1,
+        ]

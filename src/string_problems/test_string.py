@@ -475,3 +475,31 @@ class TestClass1897:
 
     def test_solution_1(self, init_variables_1897):
         assert not init_variables_1897().make_equal(words=["ab", "a"])
+
+
+"""
+Test 1930. Unique Length-3 Palindromic Subsequences
+"""
+
+
+@pytest.fixture(scope="session")
+def init_variables_1930():
+    from src.string_problems.unique_length3_palindromic_subsequences import Solution
+
+    solution = Solution()
+
+    def _init_variables_1930():
+        return solution
+
+    yield _init_variables_1930
+
+
+class TestClass1930:
+    def test_solution_0(self, init_variables_1930):
+        assert init_variables_1930().count_palindromic_subsequence(s="aabca") == 3
+
+    def test_solution_1(self, init_variables_1930):
+        assert init_variables_1930().count_palindromic_subsequence(s="adc") == 0
+
+    def test_solution_2(self, init_variables_1930):
+        assert init_variables_1930().count_palindromic_subsequence(s="bbcbaba") == 4
