@@ -3,7 +3,7 @@ format:
 	isort .
 
 setup:
-	pip install leet2git
+	pip install -r requirements.txt
 
 test-solutions:
 	env PYTHONPATH=src pytest tests -s --verbose --cov=src --cov-report=html --cov-report=term-missing --suppress-no-test-exit-code
