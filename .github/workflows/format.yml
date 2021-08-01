@@ -1,9 +1,9 @@
-name: unittest
+name: format-lint
 
 on: push
 
 jobs:
-  unittest:
+  format-lint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,6 +15,6 @@ jobs:
     - name: Setup
       shell: bash -l {0}
       run: make setup
-    - name: Test solutions
+    - name: Format with black and isort
       shell: bash -l {0}
-      run: make test-solutions
+      run: make format
