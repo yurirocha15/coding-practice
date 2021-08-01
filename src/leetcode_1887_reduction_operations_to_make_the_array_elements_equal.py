@@ -45,7 +45,7 @@
 # 1 <= nums[i] <= 5 * 10^4
 #
 #
-
+from itertools import accumulate
 from typing import Counter, List
 
 

@@ -62,7 +62,7 @@
 # Each keyi in knowledge is unique.
 #
 #
-
+from collections import defaultdict
 from typing import DefaultDict, List
 
 

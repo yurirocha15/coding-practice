@@ -34,7 +34,7 @@
 # 0 <= arr1[i], arr2[j] <= 10^9
 #
 #
-
+from functools import reduce
 from typing import List
 
 

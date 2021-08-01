@@ -41,7 +41,7 @@
 # There are no repeated edges.
 #
 #
-
+from collections import defaultdict
 from typing import DefaultDict, List, Set
 
 

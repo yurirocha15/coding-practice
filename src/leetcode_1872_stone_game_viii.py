@@ -54,7 +54,8 @@
 # 2 <= n <= 10^5
 # -10^4 <= stones[i] <= 10^4
 #
-
+from functools import reduce
+from itertools import accumulate
 from typing import List
 
 

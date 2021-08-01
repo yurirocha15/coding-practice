@@ -43,6 +43,8 @@
 #
 
 
+from collections import deque
+
 #
 # @lc app=leetcode id=1856 lang=python3
 #
@@ -114,7 +116,7 @@
 #
 #
 #
-
+from itertools import accumulate
 from typing import List
 
 

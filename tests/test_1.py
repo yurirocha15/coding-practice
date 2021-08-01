@@ -21,10 +21,10 @@ def init_variables_1():
 
 class TestClass1:
     def test_solution_0(self, init_variables_1):
-        assert init_variables_1().twoSum([2, 7, 11, 15], 9) == [0, 1]
+        assert init_variables_1().twoSum([2, 7, 11, 15], 9) == [1, 0]
 
     def test_solution_1(self, init_variables_1):
-        assert init_variables_1().twoSum([3, 2, 4], 6) == [1, 2]
+        assert init_variables_1().twoSum([3, 2, 4], 6) == [2, 1]
 
     def test_solution_2(self, init_variables_1):
-        assert init_variables_1().twoSum([3, 3], 6) == [0, 1]
+        assert init_variables_1().twoSum([3, 3], 6) == [1, 0]

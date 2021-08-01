@@ -72,6 +72,7 @@
 # 1 <= n <= 1000
 #
 #
+from functools import lru_cache
 
 
 class Solution:

@@ -72,7 +72,7 @@
 # 1 <= catJump, mouseJump <= 8
 #
 #
-
+from functools import lru_cache
 from typing import List, Tuple
 
 

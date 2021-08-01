@@ -45,6 +45,7 @@
 #
 # 1 <= k <= n <= 500
 #
+from collections import deque
 
 
 class Solution:

@@ -41,7 +41,7 @@
 # There exists some nums that has adjacentPairs as its pairs.
 #
 #
-
+from collections import defaultdict
 from typing import DefaultDict, List
 
 

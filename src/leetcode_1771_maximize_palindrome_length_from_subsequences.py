@@ -36,6 +36,7 @@
 # word1 and word2 consist of lowercase English letters.
 #
 #
+from functools import lru_cache
 
 
 class Solution:

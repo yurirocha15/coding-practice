@@ -32,22 +32,22 @@
 # -1000 <= targetSum <= 1000
 #
 #
+from collections import deque
+from typing import Deque, List, Optional, Tuple
 
 
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-
-from typing import List
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left: Optional[TreeNode] = left
+        self.right: Optional[TreeNode] = right
 
 
 class Solution:
     def pathSum(self, root: TreeNode, targetSum: int) -> List[List[int]]:
-        dq = deque()
-        ret = []
+        dq: Deque[Tuple[int, List[int], TreeNode]] = deque()
+        ret: List[List[int]] = []
         if root:
             dq.append((0, [], root))
         while dq:
@@ -60,6 +60,7 @@ class Solution:
                 dq.append((curr_sum, list(curr_path), node.left))
             if node.right:
                 dq.append((curr_sum, list(curr_path), node.right))
+        print(ret)
         return ret
 
 

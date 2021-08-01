@@ -30,7 +30,7 @@
 # 1950 <= birthi < deathi <= 2050
 #
 #
-
+from itertools import accumulate
 from typing import List
 
 

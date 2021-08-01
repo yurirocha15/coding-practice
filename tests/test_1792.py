@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import math
+
 import pytest
 
 """
@@ -21,13 +23,15 @@ def init_variables_1792():
 
 class TestClass1792:
     def test_solution_0(self, init_variables_1792):
-        assert (
-            init_variables_1792().maxAverageRatio([[1, 2], [3, 5], [2, 2]], 2)
-            == 0.78333
+        assert math.isclose(
+            init_variables_1792().maxAverageRatio([[1, 2], [3, 5], [2, 2]], 2),
+            0.78333,
+            abs_tol=1e-5,
         )
 
     def test_solution_1(self, init_variables_1792):
-        assert (
-            init_variables_1792().maxAverageRatio([[2, 4], [3, 9], [4, 5], [2, 10]], 4)
-            == 0.53485
+        assert math.isclose(
+            init_variables_1792().maxAverageRatio([[2, 4], [3, 9], [4, 5], [2, 10]], 4),
+            0.53485,
+            abs_tol=1e-5,
         )

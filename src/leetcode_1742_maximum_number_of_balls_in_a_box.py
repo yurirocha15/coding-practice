@@ -42,6 +42,7 @@
 # 1 <= lowLimit <= highLimit <= 10^5
 #
 #
+from collections import defaultdict
 
 
 class Solution:

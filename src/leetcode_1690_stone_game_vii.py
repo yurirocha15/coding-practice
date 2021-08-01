@@ -39,6 +39,7 @@
 #
 
 import functools
+from itertools import accumulate
 from typing import List
 
 

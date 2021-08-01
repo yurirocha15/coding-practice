@@ -57,6 +57,7 @@
 #
 #
 
+import math
 from typing import List
 
 
@@ -70,7 +71,7 @@ class Solution:
         def check_valid(speed: int) -> bool:
             cur_time: float = 0.0
             for d in dist:
-                cur_time = (d / speed) + ceil(cur_time)
+                cur_time = (d / speed) + math.ceil(cur_time)
                 if cur_time > hour:
                     return False
             return True
