@@ -1,7 +1,7 @@
 # Table of Contents
-[Solution Summary](#summary)  
-[Difficulty](#difficulty)  
-[Categories](#categories)  
+[Solution Summary](#summary)
+[Difficulty](#difficulty)
+[Categories](#categories)
 # <a name='summary'></a>Solution Summary
 
 |ID|Problem|Leetcode ID|Categories|Difficulty|
@@ -87,6 +87,9 @@
 |79|[Concatenation of Array](src/leetcode_1929_concatenation_of_array.py)|[1929](https://leetcode.com/problems/concatenation-of-array)|[Array](#array)|[Easy](#Easy)|
 |80|[Unique Length-3 Palindromic Subsequences](src/leetcode_1930_unique_length_3_palindromic_subsequences.py)|[1930](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)|[Hash Table](#hash-table), [String](#string), [Prefix Sum](#prefix-sum)|[Medium](#Medium)|
 |81|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|[Dynamic Programming](#dynamic-programming)|[Hard](#Hard)|
+|82|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|[Hash Table](#hash-table), [String](#string)|[Easy](#Easy)|
+|83|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|[Array](#array), [Greedy](#greedy)|[Medium](#Medium)|
+|84|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|[Array](#array), [Dynamic Programming](#dynamic-programming)|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -121,6 +124,7 @@
 |26|[Maximum Product Difference Between Two Pairs](src/leetcode_1913_maximum_product_difference_between_two_pairs.py)|[1913](https://leetcode.com/problems/maximum-product-difference-between-two-pairs)|[Array](#array), [Sorting](#sorting)|
 |27|[Build Array from Permutation](src/leetcode_1920_build_array_from_permutation.py)|[1920](https://leetcode.com/problems/build-array-from-permutation)|[Array](#array), [Simulation](#simulation)|
 |28|[Concatenation of Array](src/leetcode_1929_concatenation_of_array.py)|[1929](https://leetcode.com/problems/concatenation-of-array)|[Array](#array)|
+|29|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|[Hash Table](#hash-table), [String](#string)|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -164,6 +168,8 @@
 |37|[Eliminate Maximum Number of Monsters](src/leetcode_1921_eliminate_maximum_number_of_monsters.py)|[1921](https://leetcode.com/problems/eliminate-maximum-number-of-monsters)|[Array](#array), [Greedy](#greedy), [Sorting](#sorting)|
 |38|[Count Good Numbers](src/leetcode_1922_count_good_numbers.py)|[1922](https://leetcode.com/problems/count-good-numbers)|[Math](#math), [Recursion](#recursion)|
 |39|[Unique Length-3 Palindromic Subsequences](src/leetcode_1930_unique_length_3_palindromic_subsequences.py)|[1930](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)|[Hash Table](#hash-table), [String](#string), [Prefix Sum](#prefix-sum)|
+|40|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|[Array](#array), [Greedy](#greedy)|
+|41|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|[Array](#array), [Dynamic Programming](#dynamic-programming)|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -233,6 +239,8 @@
 |43|[Build Array from Permutation](src/leetcode_1920_build_array_from_permutation.py)|[1920](https://leetcode.com/problems/build-array-from-permutation)|[Easy](#Easy)|
 |44|[Eliminate Maximum Number of Monsters](src/leetcode_1921_eliminate_maximum_number_of_monsters.py)|[1921](https://leetcode.com/problems/eliminate-maximum-number-of-monsters)|[Medium](#Medium)|
 |45|[Concatenation of Array](src/leetcode_1929_concatenation_of_array.py)|[1929](https://leetcode.com/problems/concatenation-of-array)|[Easy](#Easy)|
+|46|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|[Medium](#Medium)|
+|47|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|[Medium](#Medium)|
 ## <a name="backtracking"></a>Backtracking
 
 |ID|Problem|Leetcode ID|Difficulty|
@@ -316,6 +324,7 @@
 |9|[Largest Color Value in a Directed Graph](src/leetcode_1857_largest_color_value_in_a_directed_graph.py)|[1857](https://leetcode.com/problems/largest-color-value-in-a-directed-graph)|[Hard](#Hard)|
 |10|[Stone Game VIII](src/leetcode_1872_stone_game_viii.py)|[1872](https://leetcode.com/problems/stone-game-viii)|[Hard](#Hard)|
 |11|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|[Hard](#Hard)|
+|12|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|[Medium](#Medium)|
 ## <a name="game-theory"></a>Game Theory
 
 |ID|Problem|Leetcode ID|Difficulty|
@@ -350,6 +359,7 @@
 |13|[Maximum Value after Insertion](src/leetcode_1881_maximum_value_after_insertion.py)|[1881](https://leetcode.com/problems/maximum-value-after-insertion)|[Medium](#Medium)|
 |14|[Merge Triplets to Form Target Triplet](src/leetcode_1899_merge_triplets_to_form_target_triplet.py)|[1899](https://leetcode.com/problems/merge-triplets-to-form-target-triplet)|[Medium](#Medium)|
 |15|[Eliminate Maximum Number of Monsters](src/leetcode_1921_eliminate_maximum_number_of_monsters.py)|[1921](https://leetcode.com/problems/eliminate-maximum-number-of-monsters)|[Medium](#Medium)|
+|16|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|[Medium](#Medium)|
 ## <a name="hash-table"></a>Hash Table
 
 |ID|Problem|Leetcode ID|Difficulty|
@@ -368,6 +378,7 @@
 |12|[Largest Color Value in a Directed Graph](src/leetcode_1857_largest_color_value_in_a_directed_graph.py)|[1857](https://leetcode.com/problems/largest-color-value-in-a-directed-graph)|[Hard](#Hard)|
 |13|[Redistribute Characters to Make All Strings Equal](src/leetcode_1897_redistribute_characters_to_make_all_strings_equal.py)|[1897](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal)|[Easy](#Easy)|
 |14|[Unique Length-3 Palindromic Subsequences](src/leetcode_1930_unique_length_3_palindromic_subsequences.py)|[1930](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)|[Medium](#Medium)|
+|15|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|[Easy](#Easy)|
 ## <a name="heap-priority-queue"></a>Heap (Priority Queue)
 
 |ID|Problem|Leetcode ID|Difficulty|
@@ -518,6 +529,7 @@
 |22|[Redistribute Characters to Make All Strings Equal](src/leetcode_1897_redistribute_characters_to_make_all_strings_equal.py)|[1897](https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal)|[Easy](#Easy)|
 |23|[Maximum Number of Removable Characters](src/leetcode_1898_maximum_number_of_removable_characters.py)|[1898](https://leetcode.com/problems/maximum-number-of-removable-characters)|[Medium](#Medium)|
 |24|[Unique Length-3 Palindromic Subsequences](src/leetcode_1930_unique_length_3_palindromic_subsequences.py)|[1930](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)|[Medium](#Medium)|
+|25|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|[Easy](#Easy)|
 ## <a name="topological-sort"></a>Topological Sort
 
 |ID|Problem|Leetcode ID|Difficulty|
