@@ -1,6 +1,6 @@
 # Table of Contents
-[Solution Summary](#summary)
-[Difficulty](#difficulty)
+[Solution Summary](#summary)  
+[Difficulty](#difficulty)  
 # <a name='summary'></a>Solution Summary
 
 |ID|Problem|Leetcode ID|Categories|Difficulty|
