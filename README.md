@@ -97,6 +97,8 @@
 |90|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|Array, Greedy|[Medium](#Medium)|
 |91|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|Array, Dynamic Programming|[Medium](#Medium)|
 |92|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|Dynamic Programming|[Hard](#Hard)|
+|93|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|[Easy](#Easy)|
+|94|[Sum of Beauty in the Array](src/leetcode_2012_sum_of_beauty_in_the_array.py)|[2012](https://leetcode.com/problems/sum-of-beauty-in-the-array)|Array|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -135,6 +137,7 @@
 |30|[Build Array from Permutation](src/leetcode_1920_build_array_from_permutation.py)|[1920](https://leetcode.com/problems/build-array-from-permutation)|Array, Simulation|
 |31|[Concatenation of Array](src/leetcode_1929_concatenation_of_array.py)|[1929](https://leetcode.com/problems/concatenation-of-array)|Array|
 |32|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|Hash Table, String|
+|33|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -184,6 +187,7 @@
 |43|[Unique Length-3 Palindromic Subsequences](src/leetcode_1930_unique_length_3_palindromic_subsequences.py)|[1930](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)|Hash Table, String, Prefix Sum|
 |44|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|Array, Greedy|
 |45|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|Array, Dynamic Programming|
+|46|[Sum of Beauty in the Array](src/leetcode_2012_sum_of_beauty_in_the_array.py)|[2012](https://leetcode.com/problems/sum-of-beauty-in-the-array)|Array|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
