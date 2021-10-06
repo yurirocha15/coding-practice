@@ -99,6 +99,7 @@
 |92|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|Dynamic Programming|[Hard](#Hard)|
 |93|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|[Easy](#Easy)|
 |94|[Sum of Beauty in the Array](src/leetcode_2012_sum_of_beauty_in_the_array.py)|[2012](https://leetcode.com/problems/sum-of-beauty-in-the-array)|Array|[Medium](#Medium)|
+|95|[Detect Squares](src/leetcode_2013_detect_squares.py)|[2013](https://leetcode.com/problems/detect-squares)|Array, Hash Table, Design, Counting|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -188,6 +189,7 @@
 |44|[Add Minimum Number of Rungs](src/leetcode_1936_add_minimum_number_of_rungs.py)|[1936](https://leetcode.com/problems/add-minimum-number-of-rungs)|Array, Greedy|
 |45|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|Array, Dynamic Programming|
 |46|[Sum of Beauty in the Array](src/leetcode_2012_sum_of_beauty_in_the_array.py)|[2012](https://leetcode.com/problems/sum-of-beauty-in-the-array)|Array|
+|47|[Detect Squares](src/leetcode_2013_detect_squares.py)|[2013](https://leetcode.com/problems/detect-squares)|Array, Hash Table, Design, Counting|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
