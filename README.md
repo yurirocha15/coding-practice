@@ -100,6 +100,9 @@
 |93|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|[Easy](#Easy)|
 |94|[Sum of Beauty in the Array](src/leetcode_2012_sum_of_beauty_in_the_array.py)|[2012](https://leetcode.com/problems/sum-of-beauty-in-the-array)|Array|[Medium](#Medium)|
 |95|[Detect Squares](src/leetcode_2013_detect_squares.py)|[2013](https://leetcode.com/problems/detect-squares)|Array, Hash Table, Design, Counting|[Medium](#Medium)|
+|96|[Maximum Difference Between Increasing Elements](src/leetcode_2016_maximum_difference_between_increasing_elements.py)|[2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements)|Array|[Easy](#Easy)|
+|97|[Grid Game](src/leetcode_2017_grid_game.py)|[2017](https://leetcode.com/problems/grid-game)|Array, Matrix, Prefix Sum|[Medium](#Medium)|
+|98|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -139,6 +142,7 @@
 |31|[Concatenation of Array](src/leetcode_1929_concatenation_of_array.py)|[1929](https://leetcode.com/problems/concatenation-of-array)|Array|
 |32|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|Hash Table, String|
 |33|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|
+|34|[Maximum Difference Between Increasing Elements](src/leetcode_2016_maximum_difference_between_increasing_elements.py)|[2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements)|Array|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -190,6 +194,8 @@
 |45|[Maximum Number of Points with Cost](src/leetcode_1937_maximum_number_of_points_with_cost.py)|[1937](https://leetcode.com/problems/maximum-number-of-points-with-cost)|Array, Dynamic Programming|
 |46|[Sum of Beauty in the Array](src/leetcode_2012_sum_of_beauty_in_the_array.py)|[2012](https://leetcode.com/problems/sum-of-beauty-in-the-array)|Array|
 |47|[Detect Squares](src/leetcode_2013_detect_squares.py)|[2013](https://leetcode.com/problems/detect-squares)|Array, Hash Table, Design, Counting|
+|48|[Grid Game](src/leetcode_2017_grid_game.py)|[2017](https://leetcode.com/problems/grid-game)|Array, Matrix, Prefix Sum|
+|49|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
