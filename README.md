@@ -103,6 +103,7 @@
 |96|[Maximum Difference Between Increasing Elements](src/leetcode_2016_maximum_difference_between_increasing_elements.py)|[2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements)|Array|[Easy](#Easy)|
 |97|[Grid Game](src/leetcode_2017_grid_game.py)|[2017](https://leetcode.com/problems/grid-game)|Array, Matrix, Prefix Sum|[Medium](#Medium)|
 |98|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|[Medium](#Medium)|
+|99|[The Score of Students Solving Math Expression](src/leetcode_2019_the_score_of_students_solving_math_expression.py)|[2019](https://leetcode.com/problems/the-score-of-students-solving-math-expression)|Array, Math, String, Dynamic Programming, Stack, Memoization|[Hard](#Hard)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -215,6 +216,7 @@
 |13|[Largest Color Value in a Directed Graph](src/leetcode_1857_largest_color_value_in_a_directed_graph.py)|[1857](https://leetcode.com/problems/largest-color-value-in-a-directed-graph)|Hash Table, Dynamic Programming, Graph, Topological Sort, Memoization, Counting|
 |14|[Stone Game VIII](src/leetcode_1872_stone_game_viii.py)|[1872](https://leetcode.com/problems/stone-game-viii)|Array, Math, Dynamic Programming, Prefix Sum, Game Theory|
 |15|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|Dynamic Programming|
+|16|[The Score of Students Solving Math Expression](src/leetcode_2019_the_score_of_students_solving_math_expression.py)|[2019](https://leetcode.com/problems/the-score-of-students-solving-math-expression)|Array, Math, String, Dynamic Programming, Stack, Memoization|
 
 
 
