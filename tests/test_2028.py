@@ -24,7 +24,7 @@ class TestClass2028:
         assert init_variables_2028().missingRolls([3, 2, 4, 3], 4, 2) == [6, 6]
 
     def test_solution_1(self, init_variables_2028):
-        assert init_variables_2028().missingRolls([1, 5, 6], 3, 4) == [2, 3, 2, 2]
+        assert init_variables_2028().missingRolls([1, 5, 6], 3, 4) == [3, 2, 2, 2]
 
     def test_solution_2(self, init_variables_2028):
         assert init_variables_2028().missingRolls([1, 2, 3, 4], 6, 4) == []
