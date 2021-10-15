@@ -104,6 +104,8 @@
 |97|[Grid Game](src/leetcode_2017_grid_game.py)|[2017](https://leetcode.com/problems/grid-game)|Array, Matrix, Prefix Sum|[Medium](#Medium)|
 |98|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|[Medium](#Medium)|
 |99|[The Score of Students Solving Math Expression](src/leetcode_2019_the_score_of_students_solving_math_expression.py)|[2019](https://leetcode.com/problems/the-score-of-students-solving-math-expression)|Array, Math, String, Dynamic Programming, Stack, Memoization|[Hard](#Hard)|
+|100|[Minimum Moves to Convert String](src/leetcode_2027_minimum_moves_to_convert_string.py)|[2027](https://leetcode.com/problems/minimum-moves-to-convert-string)|String, Greedy|[Easy](#Easy)|
+|101|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -144,6 +146,7 @@
 |32|[Maximum Number of Words You Can Type](src/leetcode_1935_maximum_number_of_words_you_can_type.py)|[1935](https://leetcode.com/problems/maximum-number-of-words-you-can-type)|Hash Table, String|
 |33|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|
 |34|[Maximum Difference Between Increasing Elements](src/leetcode_2016_maximum_difference_between_increasing_elements.py)|[2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements)|Array|
+|35|[Minimum Moves to Convert String](src/leetcode_2027_minimum_moves_to_convert_string.py)|[2027](https://leetcode.com/problems/minimum-moves-to-convert-string)|String, Greedy|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -197,6 +200,7 @@
 |47|[Detect Squares](src/leetcode_2013_detect_squares.py)|[2013](https://leetcode.com/problems/detect-squares)|Array, Hash Table, Design, Counting|
 |48|[Grid Game](src/leetcode_2017_grid_game.py)|[2017](https://leetcode.com/problems/grid-game)|Array, Matrix, Prefix Sum|
 |49|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|
+|50|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
