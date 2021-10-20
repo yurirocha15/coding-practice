@@ -106,6 +106,7 @@
 |99|[The Score of Students Solving Math Expression](src/leetcode_2019_the_score_of_students_solving_math_expression.py)|[2019](https://leetcode.com/problems/the-score-of-students-solving-math-expression)|Array, Math, String, Dynamic Programming, Stack, Memoization|[Hard](#Hard)|
 |100|[Minimum Moves to Convert String](src/leetcode_2027_minimum_moves_to_convert_string.py)|[2027](https://leetcode.com/problems/minimum-moves-to-convert-string)|String, Greedy|[Easy](#Easy)|
 |101|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|[Medium](#Medium)|
+|102|[Stone Game IX](src/leetcode_2029_stone_game_ix.py)|[2029](https://leetcode.com/problems/stone-game-ix)|Array, Math, Greedy, Counting, Game Theory|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -201,6 +202,7 @@
 |48|[Grid Game](src/leetcode_2017_grid_game.py)|[2017](https://leetcode.com/problems/grid-game)|Array, Matrix, Prefix Sum|
 |49|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|
 |50|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|
+|51|[Stone Game IX](src/leetcode_2029_stone_game_ix.py)|[2029](https://leetcode.com/problems/stone-game-ix)|Array, Math, Greedy, Counting, Game Theory|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
