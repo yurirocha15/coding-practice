@@ -107,6 +107,8 @@
 |100|[Minimum Moves to Convert String](src/leetcode_2027_minimum_moves_to_convert_string.py)|[2027](https://leetcode.com/problems/minimum-moves-to-convert-string)|String, Greedy|[Easy](#Easy)|
 |101|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|[Medium](#Medium)|
 |102|[Stone Game IX](src/leetcode_2029_stone_game_ix.py)|[2029](https://leetcode.com/problems/stone-game-ix)|Array, Math, Greedy, Counting, Game Theory|[Medium](#Medium)|
+|103|[Two Out of Three](src/leetcode_2032_two_out_of_three.py)|[2032](https://leetcode.com/problems/two-out-of-three)|Array, Hash Table|[Easy](#Easy)|
+|104|[Minimum Operations to Make a Uni-Value Grid](src/leetcode_2033_minimum_operations_to_make_a_uni_value_grid.py)|[2033](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid)|Array, Math, Sorting, Matrix|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -148,6 +150,7 @@
 |33|[Final Value of Variable After Performing Operations](src/leetcode_2011_final_value_of_variable_after_performing_operations.py)|[2011](https://leetcode.com/problems/final-value-of-variable-after-performing-operations)|Array, String, Simulation|
 |34|[Maximum Difference Between Increasing Elements](src/leetcode_2016_maximum_difference_between_increasing_elements.py)|[2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements)|Array|
 |35|[Minimum Moves to Convert String](src/leetcode_2027_minimum_moves_to_convert_string.py)|[2027](https://leetcode.com/problems/minimum-moves-to-convert-string)|String, Greedy|
+|36|[Two Out of Three](src/leetcode_2032_two_out_of_three.py)|[2032](https://leetcode.com/problems/two-out-of-three)|Array, Hash Table|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -203,6 +206,7 @@
 |49|[Check if Word Can Be Placed In Crossword](src/leetcode_2018_check_if_word_can_be_placed_in_crossword.py)|[2018](https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword)|Array, Matrix, Enumeration|
 |50|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|
 |51|[Stone Game IX](src/leetcode_2029_stone_game_ix.py)|[2029](https://leetcode.com/problems/stone-game-ix)|Array, Math, Greedy, Counting, Game Theory|
+|52|[Minimum Operations to Make a Uni-Value Grid](src/leetcode_2033_minimum_operations_to_make_a_uni_value_grid.py)|[2033](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid)|Array, Math, Sorting, Matrix|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
