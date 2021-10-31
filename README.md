@@ -109,6 +109,9 @@
 |102|[Stone Game IX](src/leetcode_2029_stone_game_ix.py)|[2029](https://leetcode.com/problems/stone-game-ix)|Array, Math, Greedy, Counting, Game Theory|[Medium](#Medium)|
 |103|[Two Out of Three](src/leetcode_2032_two_out_of_three.py)|[2032](https://leetcode.com/problems/two-out-of-three)|Array, Hash Table|[Easy](#Easy)|
 |104|[Minimum Operations to Make a Uni-Value Grid](src/leetcode_2033_minimum_operations_to_make_a_uni_value_grid.py)|[2033](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid)|Array, Math, Sorting, Matrix|[Medium](#Medium)|
+|105|[Check if Numbers Are Ascending in a Sentence](src/leetcode_2042_check_if_numbers_are_ascending_in_a_sentence.py)|[2042](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence)|String|[Easy](#Easy)|
+|106|[Simple Bank System](src/leetcode_2043_simple_bank_system.py)|[2043](https://leetcode.com/problems/simple-bank-system)|Array, Hash Table, Design, Simulation|[Medium](#Medium)|
+|107|[Count Number of Maximum Bitwise-OR Subsets](src/leetcode_2044_count_number_of_maximum_bitwise_or_subsets.py)|[2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets)|Array, Backtracking, Bit Manipulation|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -151,6 +154,7 @@
 |34|[Maximum Difference Between Increasing Elements](src/leetcode_2016_maximum_difference_between_increasing_elements.py)|[2016](https://leetcode.com/problems/maximum-difference-between-increasing-elements)|Array|
 |35|[Minimum Moves to Convert String](src/leetcode_2027_minimum_moves_to_convert_string.py)|[2027](https://leetcode.com/problems/minimum-moves-to-convert-string)|String, Greedy|
 |36|[Two Out of Three](src/leetcode_2032_two_out_of_three.py)|[2032](https://leetcode.com/problems/two-out-of-three)|Array, Hash Table|
+|37|[Check if Numbers Are Ascending in a Sentence](src/leetcode_2042_check_if_numbers_are_ascending_in_a_sentence.py)|[2042](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence)|String|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -207,6 +211,8 @@
 |50|[Find Missing Observations](src/leetcode_2028_find_missing_observations.py)|[2028](https://leetcode.com/problems/find-missing-observations)|Array, Math, Simulation|
 |51|[Stone Game IX](src/leetcode_2029_stone_game_ix.py)|[2029](https://leetcode.com/problems/stone-game-ix)|Array, Math, Greedy, Counting, Game Theory|
 |52|[Minimum Operations to Make a Uni-Value Grid](src/leetcode_2033_minimum_operations_to_make_a_uni_value_grid.py)|[2033](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid)|Array, Math, Sorting, Matrix|
+|53|[Simple Bank System](src/leetcode_2043_simple_bank_system.py)|[2043](https://leetcode.com/problems/simple-bank-system)|Array, Hash Table, Design, Simulation|
+|54|[Count Number of Maximum Bitwise-OR Subsets](src/leetcode_2044_count_number_of_maximum_bitwise_or_subsets.py)|[2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets)|Array, Backtracking, Bit Manipulation|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
