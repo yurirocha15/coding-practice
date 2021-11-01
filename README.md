@@ -112,6 +112,7 @@
 |105|[Check if Numbers Are Ascending in a Sentence](src/leetcode_2042_check_if_numbers_are_ascending_in_a_sentence.py)|[2042](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence)|String|[Easy](#Easy)|
 |106|[Simple Bank System](src/leetcode_2043_simple_bank_system.py)|[2043](https://leetcode.com/problems/simple-bank-system)|Array, Hash Table, Design, Simulation|[Medium](#Medium)|
 |107|[Count Number of Maximum Bitwise-OR Subsets](src/leetcode_2044_count_number_of_maximum_bitwise_or_subsets.py)|[2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets)|Array, Backtracking, Bit Manipulation|[Medium](#Medium)|
+|108|[Second Minimum Time to Reach Destination](src/leetcode_2045_second_minimum_time_to_reach_destination.py)|[2045](https://leetcode.com/problems/second-minimum-time-to-reach-destination)|Array, Breadth-First Search, Graph, Shortest Path|[Hard](#Hard)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -233,6 +234,7 @@
 |14|[Stone Game VIII](src/leetcode_1872_stone_game_viii.py)|[1872](https://leetcode.com/problems/stone-game-viii)|Array, Math, Dynamic Programming, Prefix Sum, Game Theory|
 |15|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|Dynamic Programming|
 |16|[The Score of Students Solving Math Expression](src/leetcode_2019_the_score_of_students_solving_math_expression.py)|[2019](https://leetcode.com/problems/the-score-of-students-solving-math-expression)|Array, Math, String, Dynamic Programming, Stack, Memoization|
+|17|[Second Minimum Time to Reach Destination](src/leetcode_2045_second_minimum_time_to_reach_destination.py)|[2045](https://leetcode.com/problems/second-minimum-time-to-reach-destination)|Array, Breadth-First Search, Graph, Shortest Path|
 
 
 
