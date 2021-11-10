@@ -115,6 +115,7 @@
 |108|[Second Minimum Time to Reach Destination](src/leetcode_2045_second_minimum_time_to_reach_destination.py)|[2045](https://leetcode.com/problems/second-minimum-time-to-reach-destination)|Array, Breadth-First Search, Graph, Shortest Path|[Hard](#Hard)|
 |109|[Number of Valid Words in a Sentence](src/leetcode_2047_number_of_valid_words_in_a_sentence.py)|[2047](https://leetcode.com/problems/number-of-valid-words-in-a-sentence)|String|[Easy](#Easy)|
 |110|[Next Greater Numerically Balanced Number](src/leetcode_2048_next_greater_numerically_balanced_number.py)|[2048](https://leetcode.com/problems/next-greater-numerically-balanced-number)|Math, Backtracking, Enumeration|[Medium](#Medium)|
+|111|[Count Nodes With the Highest Score](src/leetcode_2049_count_nodes_with_the_highest_score.py)|[2049](https://leetcode.com/problems/count-nodes-with-the-highest-score)|Array, Tree, Depth-First Search, Binary Tree|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -218,6 +219,7 @@
 |53|[Simple Bank System](src/leetcode_2043_simple_bank_system.py)|[2043](https://leetcode.com/problems/simple-bank-system)|Array, Hash Table, Design, Simulation|
 |54|[Count Number of Maximum Bitwise-OR Subsets](src/leetcode_2044_count_number_of_maximum_bitwise_or_subsets.py)|[2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets)|Array, Backtracking, Bit Manipulation|
 |55|[Next Greater Numerically Balanced Number](src/leetcode_2048_next_greater_numerically_balanced_number.py)|[2048](https://leetcode.com/problems/next-greater-numerically-balanced-number)|Math, Backtracking, Enumeration|
+|56|[Count Nodes With the Highest Score](src/leetcode_2049_count_nodes_with_the_highest_score.py)|[2049](https://leetcode.com/problems/count-nodes-with-the-highest-score)|Array, Tree, Depth-First Search, Binary Tree|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
