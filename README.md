@@ -116,6 +116,11 @@
 |109|[Number of Valid Words in a Sentence](src/leetcode_2047_number_of_valid_words_in_a_sentence.py)|[2047](https://leetcode.com/problems/number-of-valid-words-in-a-sentence)|String|[Easy](#Easy)|
 |110|[Next Greater Numerically Balanced Number](src/leetcode_2048_next_greater_numerically_balanced_number.py)|[2048](https://leetcode.com/problems/next-greater-numerically-balanced-number)|Math, Backtracking, Enumeration|[Medium](#Medium)|
 |111|[Count Nodes With the Highest Score](src/leetcode_2049_count_nodes_with_the_highest_score.py)|[2049](https://leetcode.com/problems/count-nodes-with-the-highest-score)|Array, Tree, Depth-First Search, Binary Tree|[Medium](#Medium)|
+|112|[Count Vowel Substrings of a String](src/leetcode_2062_count_vowel_substrings_of_a_string.py)|[2062](https://leetcode.com/problems/count-vowel-substrings-of-a-string)|Hash Table, String|[Easy](#Easy)|
+|113|[Vowels of All Substrings](src/leetcode_2063_vowels_of_all_substrings.py)|[2063](https://leetcode.com/problems/vowels-of-all-substrings)|Math, String, Dynamic Programming, Combinatorics|[Medium](#Medium)|
+|114|[Ugly Number](src/leetcode_263_ugly_number.py)|[263](https://leetcode.com/problems/ugly-number)|Math|[Easy](#Easy)|
+|115|[Ugly Number II](src/leetcode_264_ugly_number_ii.py)|[264](https://leetcode.com/problems/ugly-number-ii)|Hash Table, Math, Dynamic Programming, Heap (Priority Queue)|[Medium](#Medium)|
+|116|[Minimized Maximum of Products Distributed to Any Store](src/leetcode_2064_minimized_maximum_of_products_distributed_to_any_store.py)|[2064](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store)|Array, Binary Search|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -160,6 +165,8 @@
 |36|[Two Out of Three](src/leetcode_2032_two_out_of_three.py)|[2032](https://leetcode.com/problems/two-out-of-three)|Array, Hash Table|
 |37|[Check if Numbers Are Ascending in a Sentence](src/leetcode_2042_check_if_numbers_are_ascending_in_a_sentence.py)|[2042](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence)|String|
 |38|[Number of Valid Words in a Sentence](src/leetcode_2047_number_of_valid_words_in_a_sentence.py)|[2047](https://leetcode.com/problems/number-of-valid-words-in-a-sentence)|String|
+|39|[Count Vowel Substrings of a String](src/leetcode_2062_count_vowel_substrings_of_a_string.py)|[2062](https://leetcode.com/problems/count-vowel-substrings-of-a-string)|Hash Table, String|
+|40|[Ugly Number](src/leetcode_263_ugly_number.py)|[263](https://leetcode.com/problems/ugly-number)|Math|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -220,6 +227,9 @@
 |54|[Count Number of Maximum Bitwise-OR Subsets](src/leetcode_2044_count_number_of_maximum_bitwise_or_subsets.py)|[2044](https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets)|Array, Backtracking, Bit Manipulation|
 |55|[Next Greater Numerically Balanced Number](src/leetcode_2048_next_greater_numerically_balanced_number.py)|[2048](https://leetcode.com/problems/next-greater-numerically-balanced-number)|Math, Backtracking, Enumeration|
 |56|[Count Nodes With the Highest Score](src/leetcode_2049_count_nodes_with_the_highest_score.py)|[2049](https://leetcode.com/problems/count-nodes-with-the-highest-score)|Array, Tree, Depth-First Search, Binary Tree|
+|57|[Vowels of All Substrings](src/leetcode_2063_vowels_of_all_substrings.py)|[2063](https://leetcode.com/problems/vowels-of-all-substrings)|Math, String, Dynamic Programming, Combinatorics|
+|58|[Ugly Number II](src/leetcode_264_ugly_number_ii.py)|[264](https://leetcode.com/problems/ugly-number-ii)|Hash Table, Math, Dynamic Programming, Heap (Priority Queue)|
+|59|[Minimized Maximum of Products Distributed to Any Store](src/leetcode_2064_minimized_maximum_of_products_distributed_to_any_store.py)|[2064](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store)|Array, Binary Search|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
