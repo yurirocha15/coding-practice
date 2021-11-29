@@ -121,6 +121,9 @@
 |114|[Ugly Number](src/leetcode_263_ugly_number.py)|[263](https://leetcode.com/problems/ugly-number)|Math|[Easy](#Easy)|
 |115|[Ugly Number II](src/leetcode_264_ugly_number_ii.py)|[264](https://leetcode.com/problems/ugly-number-ii)|Hash Table, Math, Dynamic Programming, Heap (Priority Queue)|[Medium](#Medium)|
 |116|[Minimized Maximum of Products Distributed to Any Store](src/leetcode_2064_minimized_maximum_of_products_distributed_to_any_store.py)|[2064](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store)|Array, Binary Search|[Medium](#Medium)|
+|117|[Time Needed to Buy Tickets](src/leetcode_2073_time_needed_to_buy_tickets.py)|[2073](https://leetcode.com/problems/time-needed-to-buy-tickets)|Array, Queue, Simulation|[Easy](#Easy)|
+|118|[Reverse Nodes in Even Length Groups](src/leetcode_2074_reverse_nodes_in_even_length_groups.py)|[2074](https://leetcode.com/problems/reverse-nodes-in-even-length-groups)|Linked List|[Medium](#Medium)|
+|119|[Decode the Slanted Ciphertext](src/leetcode_2075_decode_the_slanted_ciphertext.py)|[2075](https://leetcode.com/problems/decode-the-slanted-ciphertext)|String, Simulation|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -167,6 +170,7 @@
 |38|[Number of Valid Words in a Sentence](src/leetcode_2047_number_of_valid_words_in_a_sentence.py)|[2047](https://leetcode.com/problems/number-of-valid-words-in-a-sentence)|String|
 |39|[Count Vowel Substrings of a String](src/leetcode_2062_count_vowel_substrings_of_a_string.py)|[2062](https://leetcode.com/problems/count-vowel-substrings-of-a-string)|Hash Table, String|
 |40|[Ugly Number](src/leetcode_263_ugly_number.py)|[263](https://leetcode.com/problems/ugly-number)|Math|
+|41|[Time Needed to Buy Tickets](src/leetcode_2073_time_needed_to_buy_tickets.py)|[2073](https://leetcode.com/problems/time-needed-to-buy-tickets)|Array, Queue, Simulation|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -230,6 +234,8 @@
 |57|[Vowels of All Substrings](src/leetcode_2063_vowels_of_all_substrings.py)|[2063](https://leetcode.com/problems/vowels-of-all-substrings)|Math, String, Dynamic Programming, Combinatorics|
 |58|[Ugly Number II](src/leetcode_264_ugly_number_ii.py)|[264](https://leetcode.com/problems/ugly-number-ii)|Hash Table, Math, Dynamic Programming, Heap (Priority Queue)|
 |59|[Minimized Maximum of Products Distributed to Any Store](src/leetcode_2064_minimized_maximum_of_products_distributed_to_any_store.py)|[2064](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store)|Array, Binary Search|
+|60|[Reverse Nodes in Even Length Groups](src/leetcode_2074_reverse_nodes_in_even_length_groups.py)|[2074](https://leetcode.com/problems/reverse-nodes-in-even-length-groups)|Linked List|
+|61|[Decode the Slanted Ciphertext](src/leetcode_2075_decode_the_slanted_ciphertext.py)|[2075](https://leetcode.com/problems/decode-the-slanted-ciphertext)|String, Simulation|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
