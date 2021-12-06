@@ -124,6 +124,10 @@
 |117|[Time Needed to Buy Tickets](src/leetcode_2073_time_needed_to_buy_tickets.py)|[2073](https://leetcode.com/problems/time-needed-to-buy-tickets)|Array, Queue, Simulation|[Easy](#Easy)|
 |118|[Reverse Nodes in Even Length Groups](src/leetcode_2074_reverse_nodes_in_even_length_groups.py)|[2074](https://leetcode.com/problems/reverse-nodes-in-even-length-groups)|Linked List|[Medium](#Medium)|
 |119|[Decode the Slanted Ciphertext](src/leetcode_2075_decode_the_slanted_ciphertext.py)|[2075](https://leetcode.com/problems/decode-the-slanted-ciphertext)|String, Simulation|[Medium](#Medium)|
+|120|[Two Furthest Houses With Different Colors](src/leetcode_2078_two_furthest_houses_with_different_colors.py)|[2078](https://leetcode.com/problems/two-furthest-houses-with-different-colors)|Array, Greedy|[Easy](#Easy)|
+|121|[Watering Plants](src/leetcode_2079_watering_plants.py)|[2079](https://leetcode.com/problems/watering-plants)|Array|[Medium](#Medium)|
+|122|[Range Frequency Queries](src/leetcode_2080_range_frequency_queries.py)|[2080](https://leetcode.com/problems/range-frequency-queries)|Array, Hash Table, Binary Search, Design, Segment Tree|[Medium](#Medium)|
+|123|[Sum of k-Mirror Numbers](src/leetcode_2081_sum_of_k_mirror_numbers.py)|[2081](https://leetcode.com/problems/sum-of-k-mirror-numbers)|Math, Enumeration|[Hard](#Hard)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -171,6 +175,7 @@
 |39|[Count Vowel Substrings of a String](src/leetcode_2062_count_vowel_substrings_of_a_string.py)|[2062](https://leetcode.com/problems/count-vowel-substrings-of-a-string)|Hash Table, String|
 |40|[Ugly Number](src/leetcode_263_ugly_number.py)|[263](https://leetcode.com/problems/ugly-number)|Math|
 |41|[Time Needed to Buy Tickets](src/leetcode_2073_time_needed_to_buy_tickets.py)|[2073](https://leetcode.com/problems/time-needed-to-buy-tickets)|Array, Queue, Simulation|
+|42|[Two Furthest Houses With Different Colors](src/leetcode_2078_two_furthest_houses_with_different_colors.py)|[2078](https://leetcode.com/problems/two-furthest-houses-with-different-colors)|Array, Greedy|
 ## <a name="Medium"></a>Medium Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -236,6 +241,8 @@
 |59|[Minimized Maximum of Products Distributed to Any Store](src/leetcode_2064_minimized_maximum_of_products_distributed_to_any_store.py)|[2064](https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store)|Array, Binary Search|
 |60|[Reverse Nodes in Even Length Groups](src/leetcode_2074_reverse_nodes_in_even_length_groups.py)|[2074](https://leetcode.com/problems/reverse-nodes-in-even-length-groups)|Linked List|
 |61|[Decode the Slanted Ciphertext](src/leetcode_2075_decode_the_slanted_ciphertext.py)|[2075](https://leetcode.com/problems/decode-the-slanted-ciphertext)|String, Simulation|
+|62|[Watering Plants](src/leetcode_2079_watering_plants.py)|[2079](https://leetcode.com/problems/watering-plants)|Array|
+|63|[Range Frequency Queries](src/leetcode_2080_range_frequency_queries.py)|[2080](https://leetcode.com/problems/range-frequency-queries)|Array, Hash Table, Binary Search, Design, Segment Tree|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
@@ -257,6 +264,7 @@
 |15|[Painting a Grid With Three Different Colors](src/leetcode_1931_painting_a_grid_with_three_different_colors.py)|[1931](https://leetcode.com/problems/painting-a-grid-with-three-different-colors)|Dynamic Programming|
 |16|[The Score of Students Solving Math Expression](src/leetcode_2019_the_score_of_students_solving_math_expression.py)|[2019](https://leetcode.com/problems/the-score-of-students-solving-math-expression)|Array, Math, String, Dynamic Programming, Stack, Memoization|
 |17|[Second Minimum Time to Reach Destination](src/leetcode_2045_second_minimum_time_to_reach_destination.py)|[2045](https://leetcode.com/problems/second-minimum-time-to-reach-destination)|Array, Breadth-First Search, Graph, Shortest Path|
+|18|[Sum of k-Mirror Numbers](src/leetcode_2081_sum_of_k_mirror_numbers.py)|[2081](https://leetcode.com/problems/sum-of-k-mirror-numbers)|Math, Enumeration|
 
 
 
