@@ -128,6 +128,8 @@
 |121|[Watering Plants](src/leetcode_2079_watering_plants.py)|[2079](https://leetcode.com/problems/watering-plants)|Array|[Medium](#Medium)|
 |122|[Range Frequency Queries](src/leetcode_2080_range_frequency_queries.py)|[2080](https://leetcode.com/problems/range-frequency-queries)|Array, Hash Table, Binary Search, Design, Segment Tree|[Medium](#Medium)|
 |123|[Sum of k-Mirror Numbers](src/leetcode_2081_sum_of_k_mirror_numbers.py)|[2081](https://leetcode.com/problems/sum-of-k-mirror-numbers)|Math, Enumeration|[Hard](#Hard)|
+|124|[Course Schedule](src/leetcode_207_course_schedule.py)|[207](https://leetcode.com/problems/course-schedule)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|[Medium](#Medium)|
+|125|[Course Schedule IV](src/leetcode_1462_course_schedule_iv.py)|[1462](https://leetcode.com/problems/course-schedule-iv)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -243,6 +245,8 @@
 |61|[Decode the Slanted Ciphertext](src/leetcode_2075_decode_the_slanted_ciphertext.py)|[2075](https://leetcode.com/problems/decode-the-slanted-ciphertext)|String, Simulation|
 |62|[Watering Plants](src/leetcode_2079_watering_plants.py)|[2079](https://leetcode.com/problems/watering-plants)|Array|
 |63|[Range Frequency Queries](src/leetcode_2080_range_frequency_queries.py)|[2080](https://leetcode.com/problems/range-frequency-queries)|Array, Hash Table, Binary Search, Design, Segment Tree|
+|64|[Course Schedule](src/leetcode_207_course_schedule.py)|[207](https://leetcode.com/problems/course-schedule)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|
+|65|[Course Schedule IV](src/leetcode_1462_course_schedule_iv.py)|[1462](https://leetcode.com/problems/course-schedule-iv)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
