@@ -130,6 +130,8 @@
 |123|[Sum of k-Mirror Numbers](src/leetcode_2081_sum_of_k_mirror_numbers.py)|[2081](https://leetcode.com/problems/sum-of-k-mirror-numbers)|Math, Enumeration|[Hard](#Hard)|
 |124|[Course Schedule](src/leetcode_207_course_schedule.py)|[207](https://leetcode.com/problems/course-schedule)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|[Medium](#Medium)|
 |125|[Course Schedule IV](src/leetcode_1462_course_schedule_iv.py)|[1462](https://leetcode.com/problems/course-schedule-iv)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|[Medium](#Medium)|
+|126|[Unique Binary Search Trees](src/leetcode_96_unique_binary_search_trees.py)|[96](https://leetcode.com/problems/unique-binary-search-trees)|Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree|[Medium](#Medium)|
+|127|[Unique Binary Search Trees II](src/leetcode_95_unique_binary_search_trees_ii.py)|[95](https://leetcode.com/problems/unique-binary-search-trees-ii)|Dynamic Programming, Backtracking, Tree, Binary Search Tree, Binary Tree|[Medium](#Medium)|
 
 # <a name='difficulty'></a>Difficulty
 ## <a name="Easy"></a>Easy Questions
@@ -247,6 +249,8 @@
 |63|[Range Frequency Queries](src/leetcode_2080_range_frequency_queries.py)|[2080](https://leetcode.com/problems/range-frequency-queries)|Array, Hash Table, Binary Search, Design, Segment Tree|
 |64|[Course Schedule](src/leetcode_207_course_schedule.py)|[207](https://leetcode.com/problems/course-schedule)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|
 |65|[Course Schedule IV](src/leetcode_1462_course_schedule_iv.py)|[1462](https://leetcode.com/problems/course-schedule-iv)|Depth-First Search, Breadth-First Search, Graph, Topological Sort|
+|66|[Unique Binary Search Trees](src/leetcode_96_unique_binary_search_trees.py)|[96](https://leetcode.com/problems/unique-binary-search-trees)|Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree|
+|67|[Unique Binary Search Trees II](src/leetcode_95_unique_binary_search_trees_ii.py)|[95](https://leetcode.com/problems/unique-binary-search-trees-ii)|Dynamic Programming, Backtracking, Tree, Binary Search Tree, Binary Tree|
 ## <a name="Hard"></a>Hard Questions
 
 |ID|Problem|Leetcode ID|Categories|
